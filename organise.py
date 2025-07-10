@@ -6,11 +6,11 @@ Run with:  python organise.py
 
 # 0 ─── Imports & setup ───────────────────────────────────────────────────────
 from __future__ import annotations
+from dotenv import load_dotenv
+load_dotenv(dotenv_path="/Users/murrayheaton/Documents/GitHub/file_organiser/.env", override=True)  # force .env values to win
 import os, re, shutil, pathlib, json, logging
 from typing import Final
 from openai import OpenAI
-from dotenv import load_dotenv
-load_dotenv()
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
     project=os.getenv("OPENAI_PROJECT"),
@@ -181,6 +181,25 @@ def valid_filename(name: str) -> bool:
 
 # 9 ─── Core loop ─────────────────────────────────────────────────────────────
 def organise_folder() -> None:
+    # ── Title canonicalisation setup ───────────────────────────────
+    from difflib import SequenceMatcher
+    TITLE_MAP: dict[str, str] = {}   # raw → canonical
+
+    def shortest_title(title: str) -> str:
+        """
+        Return a canonical form: the shortest earlier title that
+        has ≥ 0.8 similarity to the new one; otherwise keep as-is.
+        """
+        for seen, canon in TITLE_MAP.items():
+            ratio = SequenceMatcher(None, title, seen).ratio()
+            if ratio >= 0.8:
+                # choose the shorter of the two
+                best = canon if len(canon) < len(title) else title
+                TITLE_MAP[seen] = TITLE_MAP[title] = best
+                return best
+        TITLE_MAP[title] = title
+        return title
+
     for src in SOURCE_DIR.glob("**/*"):
         print(f"🔍 Scanning path: {src}")
         if not src.is_file():
@@ -201,6 +220,7 @@ def organise_folder() -> None:
         instrument_hint: str | None = None
         if ext in {".pdf", ".onsongarchive"}:
             for pat, token in INSTRUMENT_MAP.items():
+                # audio skip patterns (should not apply for charts, but left for logic parity)
                 if ext in {".mp3", ".wav"} and re.search(
                         r"(Instrumental|Soprano|Alto|Tenor|Acapella|A[\\s]?cappella|Everyone|All[ _]?Parts)",
                         src.name, flags=re.I):
@@ -210,8 +230,8 @@ def organise_folder() -> None:
                 if re.search(r"\b(TENOR|SOPRANO)\b", src.name):
                     print(f"🚫 {src.name} (legacy vocal ref – skipped)")
                     continue
-                    instrument_hint = token
-                    break
+                instrument_hint = token
+                break
 
         # 9.4 – ask the LLM
         new_name = propose_new_name(src.name, instrument_hint)
@@ -237,24 +257,7 @@ def organise_folder() -> None:
         shutil.move(src, dst)
         print(f"✅ {src.name}  →  {dst.name}")
 
-        # ── place near the top of organise.py
-        from difflib import SequenceMatcher
-        TITLE_MAP: dict[str, str] = {}   # raw → canonical
-
-        def shortest_title(title: str) -> str:      
-            """
-            Return a canonical form: the shortest earlier title that
-            has ≥ 0.8 similarity to the new one; otherwise keep as‑is.
-            """
-            for seen, canon in TITLE_MAP.items():
-                ratio = SequenceMatcher(None, title, seen).ratio()
-                if ratio >= 0.8:
-                    # choose the shorter of the two
-                    best = canon if len(canon) < len(title) else title
-                    TITLE_MAP[seen] = TITLE_MAP[title] = best
-                    return best
-            TITLE_MAP[title] = title
-            return title
+        # (title canonicalisation setup moved to top of function)
 
 # 10 ─── Entry‑point ─────────────────────────────────────────────────────────
 if __name__ == "__main__":

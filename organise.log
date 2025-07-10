@@ -1023,3 +1023,293 @@
 2025-07-10 15:00:44,093 INFO LLM Hot In Herre_Tenor.pdf → SKIP
 2025-07-10 15:00:44,657 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-07-10 15:00:44,662 INFO LLM Hot In Herre_Trombone.pdf → HotInHerre_BassClef_Chart.pdf
+2025-07-10 16:13:27,069 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-10 16:15:10,374 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-10 16:20:38,522 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-10 16:38:29,890 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-07-10 16:41:30,401 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:41:30,406 INFO LLM 90s Pop Medley - SPL.mp3 → 90sPopMedley_SPL.mp3
+2025-07-10 16:42:58,021 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:42:58,026 INFO LLM 90s Pop Medley - SPL.mp3 → 90sPopMedley_SPL.mp3
+2025-07-10 16:42:59,064 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:42:59,073 INFO LLM EDM Medley - SPL.mp3 → EDMMedley_SPL.mp3
+2025-07-10 16:42:59,472 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:42:59,472 INFO LLM 2000s Punk Medley - SPL.mp3 → 2000sPunkMedley_SPL.mp3
+2025-07-10 16:43:00,377 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:00,378 INFO LLM SPL Rep 2024 - For Mains.pdf → ForMains_SPL_Chart.pdf
+2025-07-10 16:43:00,988 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:00,990 INFO LLM SPL Rep 2024 - For Subs.pdf → SPLRep2024_Original_Chart.pdf
+2025-07-10 16:43:01,501 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:01,504 INFO LLM SPL Master Rep 2025.onsongarchive → SPLMasterRep2025_Cues_Lyrics.onsongarchive
+2025-07-10 16:43:02,114 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:02,117 INFO LLM Deja Vu - SPL Abelton Tracks.mp3 → DejaVu_Cues.mp3
+2025-07-10 16:43:02,934 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:02,934 INFO LLM Espresso - SPL Abelton Tracks.mp3 → Espresso_Cues.mp3
+2025-07-10 16:43:04,063 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:04,065 INFO LLM Love On Top - SPL Abelton Tracks.mp3 → LoveOnTop_Cues.mp3
+2025-07-10 16:43:04,572 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:04,574 INFO LLM Gimme Gimme - SPL Abelton Tracks.mp3 → GimmeGimme_Cues.mp3
+2025-07-10 16:43:04,989 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:04,989 INFO LLM Hora - SPL Abelton Tracks.mp3 → Hora_Cues.mp3
+2025-07-10 16:43:05,495 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:05,497 INFO LLM Higher Love - SPL Abelton Tracks.mp3 → HigherLove_Cues.mp3
+2025-07-10 16:43:05,983 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:05,989 INFO LLM Don_t Stop The Music with September Transition - SPL Abelton Tracks.mp3 → DontStopTheMusic_SPL.mp3
+2025-07-10 16:43:06,312 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:06,314 INFO LLM Caught Up - SPL Abelton Tracks.mp3 → CaughtUp_Cues.mp3
+2025-07-10 16:43:06,717 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:06,720 INFO LLM As It Was - SPL Abelton Tracks.mp3 → AsItWas_Cues.mp3
+2025-07-10 16:43:07,347 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:07,356 INFO LLM Dance The Night - SPL Abelton Tracks.mp3 → DanceTheNight_Cues.mp3
+2025-07-10 16:43:07,853 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:07,854 INFO LLM Flowers - SPL Abelton Tracks.mp3 → Flowers_Cues.mp3
+2025-07-10 16:43:08,258 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:08,259 INFO LLM Fantasy - SPL Abelton Tracks.mp3 → Fantasy_Cues.mp3
+2025-07-10 16:43:08,652 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:08,654 INFO LLM Watermelon Sugar - SPL Abelton Tracks.mp3 → WatermelonSugar_Cues.mp3
+2025-07-10 16:43:09,287 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:09,288 INFO LLM Don_t You Worry Bout A Thing - SPL Abelton Tracks.mp3 → DontYouWorryBoutAThing_Cues.mp3
+2025-07-10 16:43:09,777 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:09,779 INFO LLM Skate - SPL Abelton Tracks.mp3 → Skate_Cues.mp3
+2025-07-10 16:43:10,616 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:10,617 INFO LLM Shape Of You - SPL Abelton Tracks.mp3 → ShapeOfYou_Cues.mp3
+2025-07-10 16:43:11,329 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:11,331 INFO LLM Best Of My_Boo Thang - SPL Abelton Tracks.mp3 → BestOfMyBooThang_Cues.mp3
+2025-07-10 16:43:12,053 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:12,055 INFO LLM Celebrate_Ain_t Nobody - SPL Abelton Tracks.mp3 → Celebrate_AintNobody_Cues.mp3
+2025-07-10 16:43:12,768 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:12,771 INFO LLM Mirrors - SPL Abelton Tracks.mp3 → Mirrors_Cues.mp3
+2025-07-10 16:43:13,251 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:13,254 INFO LLM Love Tonight.onsongarchive → LoveTonight_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:14,095 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:14,097 INFO LLM You Were Right.onsongarchive → YouWereRight_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:14,468 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:14,473 INFO LLM Levels.pdf → Levels_Eb_Chart.pdf
+2025-07-10 16:43:14,916 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:14,919 INFO LLM Body.onsongarchive → Body_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:15,435 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:15,436 INFO LLM Love Tonight.pdf → LoveTonight_Eb_Chart.pdf
+2025-07-10 16:43:16,046 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:16,048 INFO LLM Sweet Dreams (Are Made Of This).pdf → SweetDreams_Eb_Chart.pdf
+2025-07-10 16:43:16,665 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:16,668 INFO LLM Levels.onsongarchive → Levels_Lyrics_Chords.onsongarchive
+2025-07-10 16:43:17,198 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:17,212 INFO LLM 2000s Punk Medley.onsongarchive → 2000sPunkMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:17,679 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:17,680 INFO LLM Body.pdf → Body_Chords_Chart.pdf
+2025-07-10 16:43:18,088 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:18,090 INFO LLM Jubel.onsongarchive → Jubel_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:18,702 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:18,703 INFO LLM 90_s Pop Medley - Lyrics.pdf → 90sPopMedley_Lyrics_Chart.pdf
+2025-07-10 16:43:19,215 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:19,216 INFO LLM Murder On The Dancefloor.pdf → MurderOnTheDancefloor_Eb_Chart.pdf
+2025-07-10 16:43:19,756 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:19,765 INFO LLM 2000s Punk Medley.pdf → 2000sPunkMedley_Eb_Chart.pdf
+2025-07-10 16:43:20,345 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:20,346 INFO LLM 90_s Pop Medley.onsongarchive → 90sPopMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:20,808 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:20,810 INFO LLM 90_s Pop Medley - Chart.pdf → 90sPopMedley_Eb_Chart.pdf
+2025-07-10 16:43:21,264 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:21,265 INFO LLM You Were Right.pdf → YouWereRight_Eb_Chart.pdf
+2025-07-10 16:43:21,774 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:21,776 INFO LLM Sweet Dreams (Are Made Of This).onsongarchive → SweetDreams_Eb_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:22,188 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:22,190 INFO LLM Adore U.pdf → AdoreU_Eb_Chart.pdf
+2025-07-10 16:43:22,696 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:22,697 INFO LLM aNYway.onsongarchive → Anyway_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:23,405 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:23,407 INFO LLM Murder On The Dancefloor.onsongarchive → MurderOnTheDancefloor_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:23,832 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:23,835 INFO LLM Adore U.onsongarchive → AdoreU_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:24,338 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:24,339 INFO LLM aNYway.pdf → Anyway_Eb_Chart.pdf
+2025-07-10 16:43:24,836 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:24,844 INFO LLM Jubel.pdf → Jubel_Eb_Chart.pdf
+2025-07-10 16:43:25,461 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:25,463 INFO LLM YouWereRight_BassClef.pdf → YouWereRight_BassClef_Chart.pdf
+2025-07-10 16:43:25,973 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:25,975 INFO LLM MurderOnTheDancefloo_BassClef.pdf → MurderOnTheDancefloo_BassClef_Chart.pdf
+2025-07-10 16:43:26,591 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:26,593 INFO LLM Body_BassClef.pdf → Body_BassClef_Chords_Chart.pdf
+2025-07-10 16:43:26,969 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:26,971 INFO LLM Punk_BassClef.pdf → Punk_BassClef_Chart.pdf
+2025-07-10 16:43:28,109 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:28,113 INFO LLM 90sPop_BassClef.pdf → 90sPop_BassClef_Chart.pdf
+2025-07-10 16:43:29,049 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:29,050 INFO LLM EDM_BassClef.pdf → EDM_BassClef_Chords_Chart.pdf
+2025-07-10 16:43:29,569 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:29,571 INFO LLM Punk_Bb.pdf → Punk_Bb_Chart.pdf
+2025-07-10 16:43:29,967 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:29,970 INFO LLM PopMedley_Bb.pdf → PopMedley_Bb_Chart.pdf
+2025-07-10 16:43:30,512 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:30,592 INFO LLM EDM_Bb.pdf → EDM_Bb_Chords_Chart.pdf
+2025-07-10 16:43:31,532 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:31,541 INFO LLM Body_Bb.pdf → Body_Bb_Bb_Chart.pdf
+2025-07-10 16:43:32,124 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:32,126 INFO LLM 90sPop_Bb.pdf → 90sPop_Bb_Chart.pdf
+2025-07-10 16:43:32,633 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:32,635 INFO LLM YouWereRight_Bb.pdf → YouWereRight_Bb_Chart.pdf
+2025-07-10 16:43:33,142 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:33,144 INFO LLM MoulinRouge_Bb.pdf → MoulinRouge_Bb_Chart.pdf
+2025-07-10 16:43:33,863 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:33,865 INFO LLM MurderOnTheDancefloor_Bb.pdf → MurderOnTheDancefloor_Bb_Chart.pdf
+2025-07-10 16:43:34,575 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:34,578 INFO LLM PunkMedley_Bb.pdf → PunkMedley_Bb_Chords_Chart.pdf
+2025-07-10 16:43:34,981 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:34,983 INFO LLM 90sPop_Concert.pdf → 90sPop_Concert_Eb_Chart.pdf
+2025-07-10 16:43:35,547 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:35,562 INFO LLM EDM_Concert.pdf → EDM_Concert_Eb_Chart.pdf
+2025-07-10 16:43:36,425 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:36,427 INFO LLM Punk_Concert.pdf → Punk_Eb_Chart.pdf
+2025-07-10 16:43:36,857 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:36,859 INFO LLM YouWereRight_Concert.pdf → YouWereRight_Eb_Chart.pdf
+2025-07-10 16:43:37,341 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:37,343 INFO LLM MurderOnTheDancefloor_Concert.pdf → MurderOnTheDancefloor_Concert_Chords_Chart.pdf
+2025-07-10 16:43:37,855 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:37,856 INFO LLM Body_Concert.pdf → Body_Concert_Chords_Chart.pdf
+2025-07-10 16:43:38,333 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:38,338 INFO LLM MoulinRouge-Baritone_Saxophone.pdf → MoulinRouge_Eb_Chart.pdf
+2025-07-10 16:43:38,777 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:38,782 INFO LLM Punk_Eb.pdf → Punk_Eb_Chart.pdf
+2025-07-10 16:43:39,188 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:39,190 INFO LLM PopMedley_Eb.pdf → PopMedley_Eb_Chart.pdf
+2025-07-10 16:43:39,699 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:39,703 INFO LLM YouWereRight_Eb.pdf → YouWereRight_Eb_Chart.pdf
+2025-07-10 16:43:40,208 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:40,209 INFO LLM PunkMedley_Eb.pdf → PunkMedley_Eb_Chart.pdf
+2025-07-10 16:43:40,727 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:40,730 INFO LLM MurderOnTheDancefloor_Eb.pdf → MurderOnTheDancefloor_Eb_Chart.pdf
+2025-07-10 16:43:41,231 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:41,233 INFO LLM 90sPop_Eb.pdf → 90sPop_Eb_Chart.pdf
+2025-07-10 16:43:41,640 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:41,641 INFO LLM Body_Eb.pdf → Body_Eb_Chart.pdf
+2025-07-10 16:43:42,155 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:42,156 INFO LLM EDM_Eb.pdf → EDM_Eb_Chart.pdf
+2025-07-10 16:43:42,619 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:42,621 INFO LLM Summer.onsongarchive → Summer_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:43,165 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:43,167 INFO LLM Sorry.onsongarchive → Sorry_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:43,688 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:43,689 INFO LLM How Will I Know (Remix).onsongarchive → HowWillIKnow_Chords_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:44,808 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:44,809 INFO LLM Higher Love.onsongarchive → HigherLove_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:45,320 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:45,324 INFO LLM Proud Mary.onsongarchive → ProudMary_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:45,934 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:45,936 INFO LLM I Will Survive.onsongarchive → IWillSurvive_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:46,454 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:46,456 INFO LLM Music Sounds Better.onsongarchive → MusicSoundsBetter_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:46,883 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:46,885 INFO LLM Crazy In Love.onsongarchive → CrazyInLove_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:47,372 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:47,374 INFO LLM Unwritten.onsongarchive → Unwritten_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:47,884 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:47,896 INFO LLM Hold On We’re Going Home.onsongarchive → HoldOnWereGoingHome_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:49,178 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:49,182 INFO LLM One More Time.onsongarchive → OneMoreTime_Lyrics_Chords.onsongarchive
+2025-07-10 16:43:49,706 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:49,707 INFO LLM My Girl.onsongarchive → MyGirl_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:50,168 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:50,171 INFO LLM Watermelon Sugar.onsongarchive → WatermelonSugar_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:50,585 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:50,588 INFO LLM Shook Me All Night Long.onsongarchive → ShookMeAllNightLong_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:51,151 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:51,153 INFO LLM Shape Of You.onsongarchive → ShapeOfYou_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:51,969 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:51,970 INFO LLM Play That Funky Music.onsongarchive → PlayThatFunkyMusic_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:52,377 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:52,380 INFO LLM Cuff It.onsongarchive → CuffIt_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:52,936 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:52,943 INFO LLM Don_t You Worry Bout A Thing.onsongarchive → DontYouWorryBoutAThing_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:53,398 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:53,401 INFO LLM This Is How We Do It.onsongarchive → ThisIsHowWeDoIt_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:53,902 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:53,904 INFO LLM Where Have You Been.onsongarchive → WhereHaveYouBeen_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:54,585 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:54,590 INFO LLM Fantasy SP.onsongarchive → Fantasy_Chords_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:55,649 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:55,650 INFO LLM Let_s Groove.onsongarchive → LetsGroove_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:56,160 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:56,162 INFO LLM I_m Every Woman.onsongarchive → ImEveryWoman_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:56,980 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:56,981 INFO LLM I Feel It Coming.onsongarchive → IFeelItComing_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:57,596 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:57,598 INFO LLM My Hair.onsongarchive → MyHair_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:58,163 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:58,166 INFO LLM Don’t Stop The Music.onsongarchive → DontStopTheMusic_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:58,533 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:58,535 INFO LLM Levitating.onsongarchive → Levitating_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:59,030 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:59,031 INFO LLM Mirrors.onsongarchive → Mirrors_Lyrics_Chart.onsongarchive
+2025-07-10 16:43:59,540 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:43:59,542 INFO LLM Stand By Me.onsongarchive → StandByMe_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:00,151 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:00,153 INFO LLM Lovely Day.onsongarchive → LovelyDay_Lyrics_Chords.onsongarchive
+2025-07-10 16:44:00,872 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:00,873 INFO LLM Livin On A Prayer.onsongarchive → LivinOnAPrayer_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:01,318 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:01,327 INFO LLM Valerie.onsongarchive → Valerie_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:01,866 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:01,868 INFO LLM JT Medley.onsongarchive → JTMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:03,019 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:03,022 INFO LLM Ain’t No Mountain.onsongarchive → AintNoMountain_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:03,538 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:03,539 INFO LLM A Bar Song (Tipsy).onsongarchive → A_BarSong_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:04,253 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:04,256 INFO LLM Killing Me Softly.onsongarchive → KillingMeSoftly_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:04,999 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:05,001 INFO LLM We Found Love.onsongarchive → WeFoundLove_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:05,425 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:05,427 INFO LLM 90_s Pop Medley.onsongarchive → 90sPopMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:05,883 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:05,886 INFO LLM Caught Up.onsongarchive → CaughtUp_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:06,344 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:06,360 INFO LLM Dance The Night.onsongarchive → DanceTheNight_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:07,111 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:07,114 INFO LLM Don’t You Worry Child.onsongarchive → DontYouWorryChild_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:07,672 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:07,691 INFO LLM Shake Your Body.onsongarchive → ShakeYourBody_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:08,187 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:08,193 INFO LLM Cold Heart.onsongarchive → ColdHeart_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:08,748 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:08,752 INFO LLM Body 2.onsongarchive → Body2_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:09,172 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:09,173 INFO LLM Celebrate!.onsongarchive → Celebrate_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:09,738 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:09,739 INFO LLM Signed Sealed Delivered.onsongarchive → SignedSealedDelivered_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:10,358 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:10,368 INFO LLM Ain_t Nobody.onsongarchive → AintNobody_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:11,927 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:11,928 INFO LLM 2000s Punk Medley 2.onsongarchive → 2000sPunkMedley2_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:12,564 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:12,568 INFO LLM EDM Medley (updated).onsongarchive → EDMMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:13,048 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:13,049 INFO LLM Don_t Start Now.onsongarchive → DontStartNow_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:13,598 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:13,603 INFO LLM Persuit Of Happiness (remix).onsongarchive → PersuitOfHappiness_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:14,176 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:14,181 INFO LLM Leave The Door Open.onsongarchive → LeaveTheDoorOpen_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:14,636 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:14,669 INFO LLM Espresso.onsongarchive → Espresso_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:15,197 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:15,197 INFO LLM Can_t Take My Eyes Off Of You.onsongarchive → CantTakeMyEyesOffOfYou_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:15,769 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:15,771 INFO LLM Flowers.onsongarchive → Flowers_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:16,249 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:16,252 INFO LLM Wake Me Up.onsongarchive → WakeMeUp_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:16,841 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:16,844 INFO LLM Murder On The Dancefloor 2.onsongarchive → MurderOnTheDancefloor_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:17,359 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:17,363 INFO LLM Uptown Funk.onsongarchive → UptownFunk_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:18,066 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:18,068 INFO LLM Into You.onsongarchive → IntoYou_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:18,548 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:18,553 INFO LLM Rolling In The Deep.onsongarchive → RollingInTheDeep_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:19,195 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:19,198 INFO LLM DJ Got Us Fallin_ In Love.onsongarchive → DJGotUsFallinInLove_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:21,342 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:21,344 INFO LLM Hot In Herre.onsongarchive → HotInHerre_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:21,957 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:21,959 INFO LLM One Last Time.onsongarchive → OneLastTime_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:23,342 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:23,343 INFO LLM As It Was.onsongarchive → AsItWas_Lyrics_Chart.onsongarchive
