@@ -1313,3 +1313,737 @@
 2025-07-10 16:44:21,959 INFO LLM One Last Time.onsongarchive → OneLastTime_Lyrics_Chart.onsongarchive
 2025-07-10 16:44:23,342 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-07-10 16:44:23,343 INFO LLM As It Was.onsongarchive → AsItWas_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:24,105 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:24,106 INFO LLM Lady Hear Me Tonight.onsongarchive → LadyHearMeTonight_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:24,722 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:24,724 INFO LLM September.onsongarchive → September_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:25,286 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:25,290 INFO LLM You Were Right 2.onsongarchive → YouWereRight_Eb_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:26,886 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:26,889 INFO LLM Get Lucky.onsongarchive → GetLucky_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:27,264 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:27,283 INFO LLM Love On Top.onsongarchive → LoveOnTop_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:28,099 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:28,102 INFO LLM Toxic.onsongarchive → Toxic_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:30,171 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:30,234 INFO LLM OMG.onsongarchive → OMG_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:31,068 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:31,070 INFO LLM Deja Vu.onsongarchive → DejaVu_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:31,786 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:31,787 INFO LLM Can’t Stop The Feeling.onsongarchive → CantStopTheFeeling_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:32,707 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:32,710 INFO LLM Hora Medley.onsongarchive → HoraMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:33,218 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:33,220 INFO LLM Gimme! Gimme! Gimme! (A Man After Midnight).onsongarchive → GimmeGimmeGimme_Eb_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:33,832 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:33,833 INFO LLM I Wanna Dance With Somebody.onsongarchive → IWantToDanceWithSomebody_Lyrics_Chords.onsongarchive
+2025-07-10 16:44:34,297 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:34,299 INFO LLM Don’t Stop Believing.onsongarchive → DontStopBelieving_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:35,668 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:35,700 INFO LLM Feels So Close.onsongarchive → FeelsSoClose_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:36,393 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:36,395 INFO LLM Harder Better Faster Stronger.onsongarchive → HarderBetterFasterStronger_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:36,934 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:36,950 INFO LLM Best Of My Love_Lil Boo Thang.onsongarchive → BestOfMyLove_LilBooThang_Lyrics.onsongarchive
+2025-07-10 16:44:37,420 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:37,422 INFO LLM Rock Medley Lyrics.pdf → RockMedley_Lyrics_Chords_Chart.pdf
+2025-07-10 16:44:37,864 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:37,872 INFO LLM Rock Medley - SPL.mp3 → RockMedley_SPL.mp3
+2025-07-10 16:44:38,269 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:38,271 INFO LLM Rock Medley.pdf → RockMedley_Eb_Chart.pdf
+2025-07-10 16:44:38,752 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:38,754 INFO LLM Rock Medley.onsongarchive → RockMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:39,263 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:39,265 INFO LLM Motown Medley - Backing Track.mp3 → MotownMedley_Original.mp3
+2025-07-10 16:44:39,876 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:39,877 INFO LLM Motown Medley - With Guide.mp3 → MotownMedley_Original.mp3
+2025-07-10 16:44:40,492 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:40,495 INFO LLM Motown Medley - JUST Guide.mp3 → MotownMedley_Original.mp3
+2025-07-10 16:44:40,929 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:40,931 INFO LLM Motown Medley.mp3 → MotownMedley_Original.mp3
+2025-07-10 16:44:42,948 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:42,948 INFO LLM Disco Medley.onsongarchive → DiscoMedley_Lyrics_Chart.onsongarchive
+2025-07-10 16:44:43,458 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:43,459 INFO LLM Disco Medley Lyrics.pdf → DiscoMedley_Lyrics_Chart.pdf
+2025-07-10 16:44:43,870 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:43,872 INFO LLM Disco Medley - Sole Power.mp3 → DiscoMedley_Original.mp3
+2025-07-10 16:44:44,300 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:44,310 INFO LLM Disco Medley - Just Guide.mp3 → DiscoMedley_Original.mp3
+2025-07-10 16:44:44,793 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:44,794 INFO LLM Disco Medley.pdf → DiscoMedley_Eb_Chart.pdf
+2025-07-10 16:44:45,223 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:45,228 INFO LLM Disco Medley - With Guide.mp3 → DiscoMedley_Original.mp3
+2025-07-10 16:44:45,567 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:45,568 INFO LLM Espresso - BARITONE.wav → Espresso_Eb.wav
+2025-07-10 16:44:45,993 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:45,995 INFO LLM Espresso - ALL PARTS.wav → SKIP
+2025-07-10 16:44:47,034 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:47,045 INFO LLM Espresso - ALTO.wav → Espresso_Cues.wav
+2025-07-10 16:44:47,494 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:47,496 INFO LLM 90s - Medley - ALL PARTS.mp3 → SKIP
+2025-07-10 16:44:47,873 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:47,874 INFO LLM 90s - Medley - SPORANO.mp3 → SKIP
+2025-07-10 16:44:48,273 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:48,274 INFO LLM 90s - Medley - ALTO.mp3 → 90sMedley_Ableton.mp3
+2025-07-10 16:44:48,649 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:48,654 INFO LLM Disco Medley - Sole Power.mp3 → DiscoMedley_Original.mp3
+2025-07-10 16:44:49,149 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:49,154 INFO LLM Disco Medley - With Guide.mp3 → DiscoMedley_Original.mp3
+2025-07-10 16:44:49,477 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:49,478 INFO LLM Boogie Wonderland - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:49,861 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:49,862 INFO LLM Boogie Wonderland - ALTO - Disco Medley.mp3 → BoogieWonderland_ALTO.mp3
+2025-07-10 16:44:50,353 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:50,359 INFO LLM Funky Town - ALTO - Disco Medley.mp3 → FunkyTown_Cues.mp3
+2025-07-10 16:44:50,820 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:50,826 INFO LLM Funky Town - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:51,312 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:51,315 INFO LLM We Are Family - ALTO - Disco Medley.mp3 → WeAreFamily_Alto.mp3
+2025-07-10 16:44:51,884 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:51,897 INFO LLM We Are Family - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:54,316 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:54,318 INFO LLM Car Wash - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:54,787 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:54,817 INFO LLM Car Wash - ALTO - Disco Medley.mp3 → CarWash_Ableton.mp3
+2025-07-10 16:44:55,199 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:55,201 INFO LLM Disco Inferno - ALTO - Disco Medley.mp3 → DiscoInferno_Cues.mp3
+2025-07-10 16:44:55,600 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:55,603 INFO LLM Disco Inferno - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:55,931 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:55,933 INFO LLM Ring My Bell - ALTO - Disco Medley.mp3 → RingMyBell_Cues.mp3
+2025-07-10 16:44:56,345 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:56,348 INFO LLM Ring My Bell - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:56,772 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:56,775 INFO LLM Le Freak - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:57,386 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:57,388 INFO LLM Le Freak - ALTO - Disco Medley.mp3 → LeFreak_Ableton.mp3
+2025-07-10 16:44:57,814 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:57,815 INFO LLM Celebrate - ALTO - Disco Medley.mp3 → Celebrate_Ableton.mp3
+2025-07-10 16:44:58,251 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:58,252 INFO LLM Celebrate - ALL PARTS - Disco Medley.mp3 → SKIP
+2025-07-10 16:44:58,548 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:58,549 INFO LLM 90s - 6 It_s Gonna Be Me - ALL PARTS.mp3 → SKIP
+2025-07-10 16:44:59,583 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:44:59,586 INFO LLM 90s - 6 It_s Gonna Be Me - ALTO.mp3 → ItsGonnaBeMe_Bb.mp3
+2025-07-10 16:45:00,157 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:00,159 INFO LLM 90s - 6 It_s Gonna Be Me - SPORANO.mp3 → ItsGonnaBeMe_SPL.mp3
+2025-07-10 16:45:00,661 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:00,662 INFO LLM 90s - 2 Everybody - ALTO.mp3 → Everybody_Ableton.mp3
+2025-07-10 16:45:01,177 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:01,179 INFO LLM 90s - 2 Everybody - SPORANO.mp3 → 90s2Everybody_Original.mp3
+2025-07-10 16:45:01,526 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:01,532 INFO LLM 90s - 2 Everybody - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:01,993 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:01,995 INFO LLM 90s - 5 No Scrubs - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:02,338 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:02,339 INFO LLM 90s - 5 No Scrubs - SPORANO.mp3 → NoScrubs_Original.mp3
+2025-07-10 16:45:02,915 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:02,916 INFO LLM 90s - 5 No Scrubs - ALTO.mp3 → NoScrubs_Ableton.mp3
+2025-07-10 16:45:03,431 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:03,433 INFO LLM 90s - 1 Wanna Be - SPORANO.mp3 → WannaBe_SPL.mp3
+2025-07-10 16:45:03,891 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:03,892 INFO LLM 90s - 1 Wanna Be - ALTO.mp3 → I Wanna Be_Ableton.mp3
+2025-07-10 16:45:04,268 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:04,270 INFO LLM 90s - 1 Wanna Be - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:04,683 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:04,688 INFO LLM 90s - 3 Say You_ll Be There - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:05,166 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:05,168 INFO LLM 90s - 3 Say You_ll Be There - ALTO.mp3 → SayYoullBeThere_Alto.mp3
+2025-07-10 16:45:05,885 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:05,887 INFO LLM 90s - 3 Say You_ll Be There - SPORANO.mp3 → SayYoullBeThere_SPL.mp3
+2025-07-10 16:45:06,395 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:06,400 INFO LLM 90s - 7 Baby One More Time - ALTO.mp3 → BabyOneMoreTime_Ableton.mp3
+2025-07-10 16:45:06,799 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:06,800 INFO LLM 90s - 7 Baby One More Time - SPORANO.mp3 → BabyOneMoreTime_Original.mp3
+2025-07-10 16:45:08,033 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:08,035 INFO LLM 90s - 7 Baby One More Time - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:08,706 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:08,708 INFO LLM 90s - 4 Tearin Up My Heart - ALTO.mp3 → TearinUpMyHeart_Ableton.mp3
+2025-07-10 16:45:09,163 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:09,165 INFO LLM 90s - 4 Tearin Up My Heart - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:09,674 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:09,675 INFO LLM 90s - 4 Tearin Up My Heart - SPORANO.mp3 → TearinUpMyHeart_Original.mp3
+2025-07-10 16:45:10,125 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:10,126 INFO LLM Hot In Herre SPL.mp3 → HotInHerre_SPL.mp3
+2025-07-10 16:45:10,612 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:10,619 INFO LLM Don_t You Worry _Bout A Thing.mp3 → DontYouWorryBoutAThing_Original.mp3
+2025-07-10 16:45:11,038 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:11,071 INFO LLM JT Medley.mp3 → JTMedley_Original.mp3
+2025-07-10 16:45:11,720 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:11,723 INFO LLM Dance The Night SP.mp3 → DanceTheNight_SPL.mp3
+2025-07-10 16:45:12,260 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:12,279 INFO LLM Deja Vu SP.mp3 → DejaVu_Original.mp3
+2025-07-10 16:45:12,849 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:12,851 INFO LLM I_m Every Woman.mp3 → ImEveryWoman_Original.mp3
+2025-07-10 16:45:13,557 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:13,559 INFO LLM Copy of Celebrate_Ain_t Nobody - SPL Shoot.mp3 → CelebrateAintNobody_SPL.mp3
+2025-07-10 16:45:14,076 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:14,080 INFO LLM Gimme Gimme SP (with Cues).mp3 → GimmeGimme_Cues.mp3
+2025-07-10 16:45:15,714 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:15,717 INFO LLM Gimme Gimme SP.mp3 → GimmeGimme_Original.mp3
+2025-07-10 16:45:16,431 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:16,433 INFO LLM Stand By Me - SPL.mp3 → StandByMe_Original.mp3
+2025-07-10 16:45:16,943 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:16,946 INFO LLM Stand By Me - SPL (Instrumental).mp3 → SKIP
+2025-07-10 16:45:17,456 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:17,458 INFO LLM One Last Time.mp3 → OneLastTime_Original.mp3
+2025-07-10 16:45:17,969 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:17,970 INFO LLM Caught Up SP.mp3 → CaughtUp_SPL.mp3
+2025-07-10 16:45:18,490 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:18,491 INFO LLM Best Of MyLove_Lil Boo Thang - SP.mp3 → BestOfMyLoveLilBooThang_SPL.mp3
+2025-07-10 16:45:18,990 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:18,991 INFO LLM Fantasy SP.mp3 → Fantasy_Original.mp3
+2025-07-10 16:45:19,708 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:19,710 INFO LLM It_s My Life SP.wav → ItsMyLife_Original.wav
+2025-07-10 16:45:20,324 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:20,326 INFO LLM When We Were Young SPL.mp3 → WhenWeWereYoung_SPL.mp3
+2025-07-10 16:45:20,836 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:20,837 INFO LLM Toxic SP.mp3 → Toxic_Original.mp3
+2025-07-10 16:45:21,447 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:21,450 INFO LLM Toxic - Lyrics.pdf → Toxic_Lyrics_Chart.pdf
+2025-07-10 16:45:22,065 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:22,067 INFO LLM Toxic.pdf → Toxic_Eb_Chart.pdf
+2025-07-10 16:45:22,495 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:22,497 INFO LLM Toxic - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:22,836 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:22,838 INFO LLM Toxic - ALTO.mp3 → Toxic_Bb.mp3
+2025-07-10 16:45:23,394 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:23,396 INFO LLM Toxic_Trombone.pdf → Toxic_Eb_Chart.pdf
+2025-07-10 16:45:23,909 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:23,911 INFO LLM Toxic_Tenor.pdf → Toxic_Bb_Chart.pdf
+2025-07-10 16:45:24,315 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:24,316 INFO LLM Toxic_Alto.pdf → Toxic_Eb_Chart.pdf
+2025-07-10 16:45:24,741 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:24,745 INFO LLM Toxic_Trumpet.pdf → Toxic_Eb_Chart.pdf
+2025-07-10 16:45:25,237 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:25,239 INFO LLM When We Were Young.pdf → WhenWeWereYoung_Eb_Chart.pdf
+2025-07-10 16:45:26,089 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:26,092 INFO LLM When We Were Young - Lyrics.pdf → WhenWeWereYoung_Lyrics_Chart.pdf
+2025-07-10 16:45:26,674 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:26,675 INFO LLM When We Were Young - ACAPELLA.mp3 → WhenWeWereYoung_Original.mp3
+2025-07-10 16:45:27,081 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:27,083 INFO LLM When We Were Young - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:27,866 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:27,869 INFO LLM When We Were Young - ALTO.mp3 → WhenWeWereYoung_Bb.mp3
+2025-07-10 16:45:28,312 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:28,321 INFO LLM It_s My Life - Concert_Combined.pdf → ItsMyLife_Concert_Chart.pdf
+2025-07-10 16:45:28,823 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:28,825 INFO LLM It_s My Life - Eb_Combined.pdf → ItsMyLife_Eb_Chart.pdf
+2025-07-10 16:45:29,336 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:29,338 INFO LLM It_s My Life - Bb_Combined.pdf → ItsMyLife_Bb_Chart.pdf
+2025-07-10 16:45:29,785 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:29,788 INFO LLM It_s My Life.pdf → ItsMyLife_Eb_Chart.pdf
+2025-07-10 16:45:30,298 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:30,300 INFO LLM It_s My Life - Lyrics.pdf → ItsMyLife_Lyrics_Chart.pdf
+2025-07-10 16:45:30,674 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:30,676 INFO LLM It_s My Life - ALL PARTS.wav → SKIP
+2025-07-10 16:45:31,178 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:31,180 INFO LLM It_s My Life - EVERYONE.wav → ItsMyLife_Cues.wav
+2025-07-10 16:45:31,696 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:31,697 INFO LLM It_s My Life - Bari.pdf → ItsMyLife_Eb_Chart.pdf
+2025-07-10 16:45:32,074 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:32,077 INFO LLM It_s My Life - Trombone.pdf → ItsMyLife_BassClef_Chart.pdf
+2025-07-10 16:45:32,568 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:32,570 INFO LLM It_s My Life - Tenor.pdf → ItsMyLife_Eb_Chart.pdf
+2025-07-10 16:45:33,006 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:33,007 INFO LLM It_s My Life - Trumpet.pdf → ItsMyLife_Eb_Chart.pdf
+2025-07-10 16:45:33,535 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:33,536 INFO LLM Fantasy SP.pdf → Fantasy_Cues_Chart.pdf
+2025-07-10 16:45:34,056 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:34,057 INFO LLM Fantasy SP - Lyrics.pdf → Fantasy_Lyrics_Chart.pdf
+2025-07-10 16:45:34,632 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:34,634 INFO LLM Fantasy SP - ALTO.mp3 → Fantasy_Cues.mp3
+2025-07-10 16:45:34,968 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:34,970 INFO LLM Fantasy SP - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:35,480 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:35,482 INFO LLM BestOfMyLove_BooThang - Trombone_Combined.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:45:35,991 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:35,994 INFO LLM BestOfMyLove_BooThang - Bb_Combined.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:45:36,538 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:36,547 INFO LLM BestOfMyLove_BooThang - Concert_Combined.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:45:37,038 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:37,041 INFO LLM BestOfMyLove_BooThang - Eb_Combined.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:45:37,642 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:37,643 INFO LLM Best Of My Love_Lil Boo Thang - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:38,120 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:38,122 INFO LLM Best Of My Love_Lil Boo Thang - ALTO.mp3 → BestOfMyLoveLilBooThang_SPL.mp3
+2025-07-10 16:45:38,521 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:38,524 INFO LLM Best Of My Love_Lil Boo Thang - Lyrics.pdf → BestOfMyLove_Lyrics_Chart.pdf
+2025-07-10 16:45:38,944 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:38,949 INFO LLM Best Of My Love_Lil Boo Thang.pdf → BestOfMyLove_Chords_Chart.pdf
+2025-07-10 16:45:40,090 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:40,093 INFO LLM Best Of My Love_Lil Boo Thang (Short).pdf → BestOfMyLove_Chords_Chart.pdf
+2025-07-10 16:45:40,946 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:40,948 INFO LLM Best Of My Love_Lil Boo Thang (Short) - Lyrics.pdf → BestOfMyLove_Lyrics_Chart.pdf
+2025-07-10 16:45:41,457 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:41,460 INFO LLM BestOfMyLove_BooThang_Trumpet.pdf → BestOfMyLove_Trumpet_Chart.pdf
+2025-07-10 16:45:41,961 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:41,973 INFO LLM BestOfMyLove_BooThang_Tbn.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:45:42,545 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:42,546 INFO LLM BestOfMyLove_BooThang_Bari.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:45:43,059 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:43,060 INFO LLM BestOfMyLove_BooThang_Tenor.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:45:43,473 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:43,474 INFO LLM Caught Up - Concert_Combined.pdf → CaughtUp_Concert_Chart.pdf
+2025-07-10 16:45:43,874 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:43,875 INFO LLM Caught Up - Eb_Combined.pdf → CaughtUp_Eb_Chart.pdf
+2025-07-10 16:45:44,285 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:44,287 INFO LLM Caught Up - Bb_Combined.pdf → CaughtUp_Bb_Chart.pdf
+2025-07-10 16:45:44,900 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:44,902 INFO LLM Caught Up - Trombone_Combined.pdf → CaughtUp_BassClef_Chart.pdf
+2025-07-10 16:45:45,310 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:45,312 INFO LLM Caught Up - Lyrics.pdf → CaughtUp_Lyrics_Chart.pdf
+2025-07-10 16:45:45,822 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:45,824 INFO LLM Caught Up.pdf → CaughtUp_Eb_Chart.pdf
+2025-07-10 16:45:46,231 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:46,233 INFO LLM Caught Up SP - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:46,744 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:46,746 INFO LLM Caught Up SP - ALTO.mp3 → CaughtUp_SPL.mp3
+2025-07-10 16:45:47,253 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:47,255 INFO LLM Caught Up - Tenor.pdf → CaughtUp_Bb_Chart.pdf
+2025-07-10 16:45:47,767 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:47,768 INFO LLM Caught Up - Bari.pdf → CaughtUp_Eb_Chart.pdf
+2025-07-10 16:45:48,381 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:48,383 INFO LLM Caught Up - Trombone.pdf → CaughtUp_BassClef_Chart.pdf
+2025-07-10 16:45:48,848 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:48,850 INFO LLM Caught Up - Trumpet.pdf → CaughtUp_Bb_Chart.pdf
+2025-07-10 16:45:49,308 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:49,311 INFO LLM One Last Time - Lyrics.pdf → OneLastTime_Lyrics_Chart.pdf
+2025-07-10 16:45:49,919 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:49,920 INFO LLM One Last Time.pdf → OneLastTime_Eb_Chart.pdf
+2025-07-10 16:45:50,289 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:50,291 INFO LLM One Last Time - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:50,919 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:50,921 INFO LLM One Last Time - ALTO.mp3 → OneLastTime_Bb.mp3
+2025-07-10 16:45:51,521 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:51,522 INFO LLM One Last Time - Trumpet.pdf → OneLastTime_Bb_Chart.pdf
+2025-07-10 16:45:51,950 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:51,958 INFO LLM One Last Time - Tenor.pdf → OneLastTime_Bb_Chart.pdf
+2025-07-10 16:45:52,461 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:52,465 INFO LLM One Last Time - Bari.pdf → OneLastTime_Eb_Chart.pdf
+2025-07-10 16:45:52,989 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:52,990 INFO LLM One Last Time - Trombone.pdf → OneLastTime_BassClef_Chart.pdf
+2025-07-10 16:45:53,502 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:53,503 INFO LLM Stand By Me - ALTO.mp3 → StandByMe_Bb.mp3
+2025-07-10 16:45:54,306 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:54,308 INFO LLM Gimme! Gimme! Gimme! - Lyrics.pdf → GimmeGimmeGimme_Lyrics_Chart.pdf
+2025-07-10 16:45:55,039 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:55,041 INFO LLM Gimme! Gimme! Gimme!.pdf → GimmeGimmeGimme_Eb_Chart.pdf
+2025-07-10 16:45:55,448 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:55,450 INFO LLM Gimme Gimme - ALL PARTS.mp3 → SKIP
+2025-07-10 16:45:55,981 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:55,983 INFO LLM Gimme Gimme - ALTO.mp3 → GimmeGimme_Bb.mp3
+2025-07-10 16:45:56,880 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:56,882 INFO LLM Gimme Gimme - Bari.pdf → GimmeGimme_Eb_Chart.pdf
+2025-07-10 16:45:57,433 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:57,434 INFO LLM Gimme Gimme - Trombone.pdf → GimmeGimme_BassClef_Chart.pdf
+2025-07-10 16:45:58,012 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:58,012 INFO LLM Gimme Gimme - Trumpet.pdf → GimmeGimme_Bb_Chart.pdf
+2025-07-10 16:45:58,515 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:58,518 INFO LLM Gimme Gimme - Tenor.pdf → GimmeGimme_Bb_Chart.pdf
+2025-07-10 16:45:59,134 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:59,136 INFO LLM Lil Boo Thang.pdf → LilBooThang_Eb_Chart.pdf
+2025-07-10 16:45:59,642 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:45:59,644 INFO LLM Lil Boo Thang - Lyrics.pdf → LilBooThang_Lyrics_Chart.pdf
+2025-07-10 16:46:00,256 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:00,258 INFO LLM BestOfMyLove_BooThang_Trumpet.pdf → BestOfMyLove_Trumpet_Chart.pdf
+2025-07-10 16:46:00,871 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:00,873 INFO LLM BestOfMyLove_BooThang_Tbn.pdf → BestOfMyLoveBooThang_BassClef_Chart.pdf
+2025-07-10 16:46:01,387 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:01,389 INFO LLM BestOfMyLove_BooThang_Bari.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:46:01,898 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:01,901 INFO LLM BestOfMyLove_BooThang_Tenor.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:46:02,713 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:02,715 INFO LLM Celebrate! - Jonas Brothers.mp3 → Celebrate_Original.mp3
+2025-07-10 16:46:03,226 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:03,228 INFO LLM Ain_t No Body SP.mp3 → AintNoBody_Original.mp3
+2025-07-10 16:46:03,741 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:03,742 INFO LLM Ain_t Nobody - TromboneCombined.pdf → AintNobody_BassClef_Chart.pdf
+2025-07-10 16:46:04,253 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:04,255 INFO LLM Ain_t Nobody - BbCombined.pdf → AintNobody_Bb_Chart.pdf
+2025-07-10 16:46:04,867 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:04,869 INFO LLM Ain_t Nobody - EbCombined.pdf → AintNobody_Eb_Chart.pdf
+2025-07-10 16:46:05,379 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:05,382 INFO LLM Ain_t Nobody - Concert.pdf → AintNobody_Eb_Chart.pdf
+2025-07-10 16:46:05,995 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:05,997 INFO LLM Ain_t Nobody.pdf → AintNobody_Eb_Chart.pdf
+2025-07-10 16:46:06,400 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:06,402 INFO LLM Ain_t Nobody - Lyrics.pdf → AintNobody_Lyrics_Chart.pdf
+2025-07-10 16:46:06,810 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:06,812 INFO LLM Ain_t Nobody - ALTO.wav → AintNobody_Bb.wav
+2025-07-10 16:46:07,223 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:07,225 INFO LLM Ain_t Nobody - ALL PARTS.wav → SKIP
+2025-07-10 16:46:07,738 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:07,739 INFO LLM Ain_t Nobody - Trumpet.pdf → AintNobody_Bb_Chart.pdf
+2025-07-10 16:46:08,144 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:08,146 INFO LLM Ain_t Nobody - Bari.pdf → AintNobody_Eb_Chart.pdf
+2025-07-10 16:46:08,565 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:08,566 INFO LLM Ain_t Nobody - Tenor.pdf → AintNobody_Bb_Chart.pdf
+2025-07-10 16:46:09,273 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:09,275 INFO LLM Ain_t Nobody - Trombone.pdf → AintNobody_BassClef_Chart.pdf
+2025-07-10 16:46:09,779 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:09,781 INFO LLM Celebrate! - Lyrics.pdf → Celebrate_Lyrics_Chart.pdf
+2025-07-10 16:46:10,316 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:10,318 INFO LLM Celebrate!.pdf → Celebrate_Eb_Chart.pdf
+2025-07-10 16:46:10,671 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:10,672 INFO LLM Celebrate - ALTO.mp3 → Celebrate_Bb.mp3
+2025-07-10 16:46:11,130 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:11,131 INFO LLM Celebrate - ALL PARTS.mp3 → SKIP
+2025-07-10 16:46:11,930 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:11,932 INFO LLM Celebrate - Trumpet.pdf → Celebrate_Bb_Chart.pdf
+2025-07-10 16:46:12,442 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:12,444 INFO LLM Celebrate - Tenor.pdf → Celebrate_Bb_Chart.pdf
+2025-07-10 16:46:12,926 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:12,931 INFO LLM Celebrate - Bari.pdf → Celebrate_Eb_Chart.pdf
+2025-07-10 16:46:13,465 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:13,466 INFO LLM Celebrate - Trombone.pdf → Celebrate_BassClef_Chart.pdf
+2025-07-10 16:46:14,083 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:14,084 INFO LLM I_m Every Woman - Lyrics.pdf → ImEveryWoman_Lyrics_Chart.pdf
+2025-07-10 16:46:14,538 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:14,550 INFO LLM I_m Every Woman.pdf → ImEveryWoman_Eb_Chart.pdf
+2025-07-10 16:46:15,255 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:15,258 INFO LLM I_m Every Woman - ALTO.mp3 → ImEveryWoman_Eb.mp3
+2025-07-10 16:46:15,723 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:15,725 INFO LLM I_m Every Woman - ALL PARTS.mp3 → SKIP
+2025-07-10 16:46:16,231 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:16,233 INFO LLM I_m Every Woman - Trombone.pdf → ImEveryWoman_BassClef_Chart.pdf
+2025-07-10 16:46:16,845 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:16,847 INFO LLM I_m Every Woman - Bari.pdf → ImEveryWoman_Eb_Chart.pdf
+2025-07-10 16:46:17,368 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:17,370 INFO LLM I_m Every Woman - Trumpet.pdf → ImEveryWoman_Bb_Chart.pdf
+2025-07-10 16:46:17,755 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:17,757 INFO LLM I_m Every Woman - Tenor.pdf → ImEveryWoman_Eb_Chart.pdf
+2025-07-10 16:46:18,279 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:18,280 INFO LLM Deja Vu.pdf → DejaVu_Eb_Chart.pdf
+2025-07-10 16:46:18,795 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:18,797 INFO LLM Deja Vu - Lyrics.pdf → DejaVu_Lyrics_Chart.pdf
+2025-07-10 16:46:19,303 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:19,305 INFO LLM Deja Vu SP - ALTO.mp3 → DejaVu_SPL.mp3
+2025-07-10 16:46:19,716 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:19,717 INFO LLM Deja Vu SP - ACAPELLA.wav → DejaVu_Original.wav
+2025-07-10 16:46:20,737 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:20,739 INFO LLM Deja Vu SP - ALL PARTS.mp3 → SKIP
+2025-07-10 16:46:21,252 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:21,253 INFO LLM Deja Vu - Alto.pdf → DejaVu_Eb_Chart.pdf
+2025-07-10 16:46:22,375 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:22,377 INFO LLM Deja Vu - Tenor.pdf → DejaVu_Bb_Chart.pdf
+2025-07-10 16:46:22,856 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:22,877 INFO LLM Deja Vu - Trombone.pdf → DejaVu_BassClef_Chart.pdf
+2025-07-10 16:46:23,403 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:23,405 INFO LLM Deja Vu - Trumpet.pdf → DejaVu_Bb_Chart.pdf
+2025-07-10 16:46:24,018 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:24,020 INFO LLM Dance The Night - Tenor.pdf → DanceTheNight_Bb_Chart.pdf
+2025-07-10 16:46:24,512 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:24,514 INFO LLM Dance The Night - Trombone.pdf → DanceTheNight_BassClef_Chart.pdf
+2025-07-10 16:46:24,940 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:24,942 INFO LLM Dance The Night - Alto.pdf → DanceTheNight_Eb_Chart.pdf
+2025-07-10 16:46:25,421 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:25,427 INFO LLM Dance The Night - Trumpet.pdf → DanceTheNight_Bb_Chart.pdf
+2025-07-10 16:46:25,882 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:25,883 INFO LLM Dance The Night - Lyrics.pdf → DanceTheNight_Lyrics_Chart.pdf
+2025-07-10 16:46:26,265 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:26,267 INFO LLM Dance The Night SP.pdf → DanceTheNight_Chords_Chart.pdf
+2025-07-10 16:46:26,738 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:26,745 INFO LLM Dance The Night - ACAPELLA.mp3 → DanceTheNight_Acapella.mp3
+2025-07-10 16:46:27,188 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:27,189 INFO LLM Dance The Night - ALTO.mp3 → DanceTheNight_Ableton.mp3
+2025-07-10 16:46:27,597 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:27,599 INFO LLM Dance The Night - ALL PARTS.mp3 → SKIP
+2025-07-10 16:46:28,323 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:28,325 INFO LLM Cold Heart - Bass Clef.pdf → ColdHeart_BassClef_Chart.pdf
+2025-07-10 16:46:28,933 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:28,934 INFO LLM Gimme Gimme - Bass Clef - Bass Clef.pdf → GimmeGimme_BassClef_Chart.pdf
+2025-07-10 16:46:29,339 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:29,341 INFO LLM Ain_t Nobody - Bass Clef.pdf → AintNobody_BassClef_Chart.pdf
+2025-07-10 16:46:30,007 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:30,012 INFO LLM Celebrate - Bass Clef.pdf → Celebrate_BassClef_Chart.pdf
+2025-07-10 16:46:30,415 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:30,417 INFO LLM Toxic - Bass Clef.pdf → Toxic_BassClef_Chart.pdf
+2025-07-10 16:46:31,059 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:31,061 INFO LLM DYWBAT_Tbn.pdf → DYWBAT_BassClef_Chart.pdf
+2025-07-10 16:46:31,612 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:31,615 INFO LLM LoveOnTop - Bass Clef.pdf → LoveOnTop_BassClef_Chart.pdf
+2025-07-10 16:46:32,086 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:32,088 INFO LLM AsItWas - Bass Clef.pdf → AsItWas_BassClef_Chart.pdf
+2025-07-10 16:46:32,605 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:32,606 INFO LLM LivinOnAPrayer - Bass Clef.pdf → LivinOnAPrayer_BassClef_Chart.pdf
+2025-07-10 16:46:33,127 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:33,129 INFO LLM WatermelonSugar - Bass Clef.pdf → WatermelonSugar_BassClef_Chart.pdf
+2025-07-10 16:46:33,744 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:33,745 INFO LLM YouWereRight_BassClef.pdf → YouWereRight_BassClef_Chart.pdf
+2025-07-10 16:46:34,253 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:34,256 INFO LLM Can_tStopTheFeeling - Bass Clef.pdf → CantStopTheFeeling_BassClef_Chart.pdf
+2025-07-10 16:46:35,269 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:35,275 INFO LLM One Last Time - Bass Clef.pdf → OneLastTime_BassClef_Chart.pdf
+2025-07-10 16:46:35,790 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:35,791 INFO LLM Hora - Bass Clef.pdf → Hora_BassClef_Chart.pdf
+2025-07-10 16:46:36,404 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:36,405 INFO LLM Body_BassClef.pdf → Body_BassClef_Chords_Chart.pdf
+2025-07-10 16:46:39,168 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:39,297 INFO LLM BestOfMyLove_BooThang - Bass Clef.pdf → BestOfMyLoveBooThang_BassClef_Chart.pdf
+2025-07-10 16:46:41,506 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:41,509 INFO LLM AintNoMountain - BassClef.pdf → AintNoMountain_BassClef_Chart.pdf
+2025-07-10 16:46:42,035 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:42,036 INFO LLM I_m Every Woman - Bass Clef.pdf → ImEveryWoman_BassClef_Chart.pdf
+2025-07-10 16:46:42,501 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:42,504 INFO LLM Punk_BassClef.pdf → Punk_BassClef_Chart.pdf
+2025-07-10 16:46:44,394 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:44,397 INFO LLM PlayTheFunkyMusic - Bass Clef.pdf → PlayTheFunkyMusic_BassClef_Chart.pdf
+2025-07-10 16:46:44,809 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:44,811 INFO LLM Mirrors - Bass Clef.pdf → Mirrors_BassClef_Chart.pdf
+2025-07-10 16:46:45,312 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:45,315 INFO LLM Caught Up - Bass Clef.pdf → CaughtUp_BassClef_Chart.pdf
+2025-07-10 16:46:45,722 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:45,724 INFO LLM Deja Vu - Bass Clef.pdf → DejaVu_BassClef_Chart.pdf
+2025-07-10 16:46:46,336 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:46,337 INFO LLM GetLucky - Bass Clef.pdf → GetLucky_BassClef_Chart.pdf
+2025-07-10 16:46:46,952 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:46,955 INFO LLM 90sPop_BassClef.pdf → 90sPop_BassClef_Chart.pdf
+2025-07-10 16:46:47,348 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:47,350 INFO LLM Hot In Herre - Bass Clef.pdf → HotInHerre_BassClef_Chart.pdf
+2025-07-10 16:46:47,794 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:47,795 INFO LLM It_s My Life - Bass Clef.pdf → ItsMyLife_BassClef_Chart.pdf
+2025-07-10 16:46:48,390 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:48,393 INFO LLM EDM_BassClef.pdf → EDM_BassClef_Chart.pdf
+2025-07-10 16:46:49,101 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:49,103 INFO LLM Dance The Night - Bass Clef.pdf → DanceTheNight_BassClef_Chart.pdf
+2025-07-10 16:46:49,589 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:49,591 INFO LLM JT Medley - Bass Clef - Bass Clef.pdf → JtMedley_BassClef_Chart.pdf
+2025-07-10 16:46:50,330 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:50,332 INFO LLM IntoYou - Bass Clef.pdf → IntoYou_BassClef_Chart.pdf
+2025-07-10 16:46:50,842 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:50,844 INFO LLM WatermelonSugar-Alto_Saxophone.pdf → WatermelonSugar_Eb_Chart.pdf
+2025-07-10 16:46:51,306 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:51,311 INFO LLM I_m Every Woman - Eb.pdf → ImEveryWoman_Eb_Chart.pdf
+2025-07-10 16:46:51,807 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:51,809 INFO LLM BestOfMyLove_BooThang - Eb.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:46:52,261 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:52,265 INFO LLM LivinOnAPrayer_Eb.pdf → LivinOnAPrayer_Eb_Chart.pdf
+2025-07-10 16:46:52,791 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:52,793 INFO LLM One Last Time - Eb.pdf → OneLastTime_Eb_Chart.pdf
+2025-07-10 16:46:53,509 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:53,511 INFO LLM Punk_Eb.pdf → Punk_Eb_Eb_Chart.pdf
+2025-07-10 16:46:54,021 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:54,023 INFO LLM Deja Vu - Eb.pdf → DejaVu_Eb_Chart.pdf
+2025-07-10 16:46:54,429 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:54,431 INFO LLM JT Medley - Eb.pdf → JTMedley_Eb_Chart.pdf
+2025-07-10 16:46:54,817 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:54,819 INFO LLM LoveOnTop-Alto_Saxophone.pdf → LoveOnTop_Eb_Chart.pdf
+2025-07-10 16:46:55,242 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:55,252 INFO LLM Hora - Eb.pdf → Hora_Eb_Chart.pdf
+2025-07-10 16:46:55,691 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:55,698 INFO LLM GetLucky-Alto_Saxophone.pdf → GetLucky_Eb_Chart.pdf
+2025-07-10 16:46:56,634 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:56,636 INFO LLM Dance The Night - Eb.pdf → DanceTheNight_Eb_Chart.pdf
+2025-07-10 16:46:57,093 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:57,094 INFO LLM Mirrors-Alto_Saxophone.pdf → Mirrors_Eb_Chart.pdf
+2025-07-10 16:46:57,628 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:57,630 INFO LLM YouWereRight_Eb.pdf → YouWereRight_Eb_Chart.pdf
+2025-07-10 16:46:58,117 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:58,118 INFO LLM Thinking Out Loud-Alto_Saxophone.pdf → ThinkingOutLoud_Eb_Chart.pdf
+2025-07-10 16:46:58,469 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:58,471 INFO LLM PunkMedley_Eb.pdf → PunkMedley_Eb_Chart.pdf
+2025-07-10 16:46:58,930 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:58,931 INFO LLM Into You - Eb.pdf → IntoYou_Eb_Chart.pdf
+2025-07-10 16:46:59,448 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:59,450 INFO LLM Celebrate - Eb.pdf → Celebrate_Eb_Chart.pdf
+2025-07-10 16:46:59,960 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:46:59,962 INFO LLM Can_tStopTheFeeling-Alto_Saxophone.pdf → CantStopTheFeeling_Eb_Chart.pdf
+2025-07-10 16:47:00,468 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:00,470 INFO LLM Caught Up - Eb.pdf → CaughtUp_Eb_Chart.pdf
+2025-07-10 16:47:00,869 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:00,881 INFO LLM Cold Heart-Alto_Saxophone.pdf → ColdHeart_Eb_Chart.pdf
+2025-07-10 16:47:02,004 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:02,007 INFO LLM 90sPop_Eb.pdf → 90sPop_Eb_Chart.pdf
+2025-07-10 16:47:02,551 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:02,553 INFO LLM YourSong-Alto_Saxophone.pdf → YourSong_Eb_Chart.pdf
+2025-07-10 16:47:03,130 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:03,132 INFO LLM Ain_t Nobody - Eb.pdf → AintNobody_Eb_Chart.pdf
+2025-07-10 16:47:03,642 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:03,643 INFO LLM PlayTheFunkyMusic - Eb.pdf → PlayTheFunkyMusic_Eb_Chart.pdf
+2025-07-10 16:47:04,156 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:04,158 INFO LLM Toxic - Eb.pdf → Toxic_Eb_Chart.pdf
+2025-07-10 16:47:04,633 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:04,686 INFO LLM Body_Eb.pdf → Body_Eb_Chart.pdf
+2025-07-10 16:47:05,178 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:05,180 INFO LLM Gimme Gimme - Eb.pdf → GimmeGimme_Eb_Chart.pdf
+2025-07-10 16:47:05,698 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:05,700 INFO LLM AsItWas-Alto_Saxophone.pdf → AsItWas_Eb_Chart.pdf
+2025-07-10 16:47:06,202 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:06,203 INFO LLM Hot In Herre-Alto_Saxophone.pdf → HotInHerre_Eb_Chart.pdf
+2025-07-10 16:47:06,552 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:06,554 INFO LLM EDM_Eb.pdf → EDM_Eb_Chart.pdf
+2025-07-10 16:47:07,533 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:07,536 INFO LLM AintNoMountain.pdf → AintNoMountain_Eb_Chart.pdf
+2025-07-10 16:47:08,006 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:08,016 INFO LLM DYWBAT_Bari.pdf → DYWBAT_Eb_Chart.pdf
+2025-07-10 16:47:08,539 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:08,541 INFO LLM It_s My Life - Eb.pdf → ItsMyLife_Eb_Chart.pdf
+2025-07-10 16:47:08,999 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:09,009 INFO LLM 90sPop_Concert.pdf → 90sPop_Concert_Eb_Chart.pdf
+2025-07-10 16:47:09,495 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:09,497 INFO LLM Gimme Gimme - Concert.pdf → GimmeGimme_Eb_Chart.pdf
+2025-07-10 16:47:09,937 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:09,939 INFO LLM EDM_Concert.pdf → EDM_Concert_Eb_Chart.pdf
+2025-07-10 16:47:10,336 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:10,338 INFO LLM I_m Every Woman - Bb - Concert.pdf → ImEveryWoman_Bb_Chart.pdf
+2025-07-10 16:47:10,905 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:10,907 INFO LLM Dance The Night - Concert.pdf → DanceTheNight_Concert_Chart.pdf
+2025-07-10 16:47:12,050 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:12,052 INFO LLM Caught Up - Concert.pdf → CaughtUp_Concert_Chart.pdf
+2025-07-10 16:47:12,506 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:12,508 INFO LLM JT Medley - Concert.pdf → JTMedley_Concert_Chart.pdf
+2025-07-10 16:47:12,980 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:12,982 INFO LLM It_s My Life - Concert.pdf → ItsMyLife_Eb_Chart.pdf
+2025-07-10 16:47:13,426 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:13,428 INFO LLM Punk_Concert.pdf → Punk_Eb_Chart.pdf
+2025-07-10 16:47:13,872 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:13,875 INFO LLM YouWereRight_Concert.pdf → YouWereRight_Eb_Chart.pdf
+2025-07-10 16:47:14,482 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:14,499 INFO LLM One Last Time - Concert.pdf → OneLastTime_Concert_Chart.pdf
+2025-07-10 16:47:14,958 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:14,960 INFO LLM Hora - Concert.pdf → Hora_Concert_Chart.pdf
+2025-07-10 16:47:15,726 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:15,727 INFO LLM BestOfMyLove_BooThang - Concert.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:47:16,074 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:16,076 INFO LLM Ain_t Nobody - Concert.pdf → AintNobody_Concert_Chart.pdf
+2025-07-10 16:47:16,587 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:16,593 INFO LLM Celebrate.pdf → Celebrate_Eb_Chart.pdf
+2025-07-10 16:47:17,208 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:17,213 INFO LLM Body_Concert.pdf → Body_Concert_Chords_Chart.pdf
+2025-07-10 16:47:18,183 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:18,185 INFO LLM Toxic - Concert.pdf → Toxic_Eb_Chart.pdf
+2025-07-10 16:47:18,594 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:18,595 INFO LLM Deja Vu - Concert.pdf → DejaVu_Concert_Chart.pdf
+2025-07-10 16:47:19,110 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:19,112 INFO LLM GetLucky-Tenor_Saxophone.pdf → GetLucky_Bb_Chart.pdf
+2025-07-10 16:47:20,026 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:20,036 INFO LLM Mirrors-Tenor_Saxophone.pdf → Mirrors_Eb_Chart.pdf
+2025-07-10 16:47:20,683 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:20,685 INFO LLM Punk_Bb.pdf → Punk_Bb_Chart.pdf
+2025-07-10 16:47:21,261 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:21,263 INFO LLM Can_tStopTheFeeling-Tenor_Saxophone.pdf → CantStopTheFeeling_Bb_Chart.pdf
+2025-07-10 16:47:21,870 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:21,872 INFO LLM Hora - Bb.pdf → Hora_Bb_Chart.pdf
+2025-07-10 16:47:22,588 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:22,590 INFO LLM JT Medley - Bb.pdf → JTMedley_Bb_Chart.pdf
+2025-07-10 16:47:24,246 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:24,248 INFO LLM IntoYou - Bb.pdf → IntoYou_Bb_Chart.pdf
+2025-07-10 16:47:24,941 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:24,944 INFO LLM Deja Vu - Bb.pdf → DejaVu_Bb_Chart.pdf
+2025-07-10 16:47:25,565 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:25,567 INFO LLM One Last Time - Bb.pdf → OneLastTime_Bb_Chart.pdf
+2025-07-10 16:47:26,068 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:26,070 INFO LLM LoveOnTop-Tenor_Saxophone.pdf → LoveOnTop_Eb_Chart.pdf
+2025-07-10 16:47:27,201 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:27,203 INFO LLM I_m Every Woman - Bb.pdf → ImEveryWoman_Bb_Chart.pdf
+2025-07-10 16:47:27,706 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:27,708 INFO LLM AintNoMountain - Bb.pdf → AintNoMountain_Bb_Chart.pdf
+2025-07-10 16:47:28,134 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:28,136 INFO LLM DYWBAT - Tpt.pdf → DYWBAT_Eb_Chart.pdf
+2025-07-10 16:47:28,578 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:28,581 INFO LLM BestOfMyLove_BooThang - Bb.pdf → BestOfMyLoveBooThang_Eb_Chart.pdf
+2025-07-10 16:47:29,059 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:29,061 INFO LLM YourSong-Tenor_Saxophone.pdf → YourSong_Tenor_Chart.pdf
+2025-07-10 16:47:29,484 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:29,487 INFO LLM Gimme Gimme - Bb.pdf → GimmeGimme_Bb_Chart.pdf
+2025-07-10 16:47:29,999 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:30,004 INFO LLM DYWBAT - Tenor.pdf → DYWBAT_Bb_Chart.pdf
+2025-07-10 16:47:31,914 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:31,916 INFO LLM It_s My Life - Bb.pdf → ItsMyLife_Bb_Chart.pdf
+2025-07-10 16:47:32,408 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:32,411 INFO LLM EDM_Bb.pdf → EDM_Bb_Chords_Chart.pdf
+2025-07-10 16:47:33,968 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:33,971 INFO LLM PlayTheFunkyMusic - Bb.pdf → PlayTheFunkyMusic_Bb_Chart.pdf
+2025-07-10 16:47:34,567 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:34,569 INFO LLM Ain_t Nobody - Bb.pdf → AintNobody_Bb_Chart.pdf
+2025-07-10 16:47:35,418 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:35,420 INFO LLM Hot In Herre-Tenor_Saxophone.pdf → HotInHerre_Eb_Chart.pdf
+2025-07-10 16:47:35,975 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:35,982 INFO LLM LivinOnAPrayer - Bb.pdf → LivinOnAPrayer_Bb_Chart.pdf
+2025-07-10 16:47:36,427 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:36,431 INFO LLM WatermelonSugar-Tenor_Saxophone.pdf → WatermelonSugar_Bb_Chart.pdf
+2025-07-10 16:47:37,035 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:37,038 INFO LLM Body_Bb.pdf → Body_Bb_Chords_Chart.pdf
+2025-07-10 16:47:37,641 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:37,643 INFO LLM Toxic - Bb.pdf → Toxic_Bb_Chart.pdf
+2025-07-10 16:47:38,078 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:38,081 INFO LLM Cold Heart-Tenor_Saxophone.pdf → ColdHeart_TenorSaxophone_Eb_Chart.pdf
+2025-07-10 16:47:38,669 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:38,671 INFO LLM 90sPop_Bb.pdf → 90sPop_Bb_Chart.pdf
+2025-07-10 16:47:39,101 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:39,106 INFO LLM Caught Up - Bb.pdf → CaughtUp_Bb_Chart.pdf
+2025-07-10 16:47:39,521 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:39,526 INFO LLM YouWereRight_Bb.pdf → YouWereRight_Bb_Chart.pdf
+2025-07-10 16:47:39,899 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:39,902 INFO LLM Dance The Night - Bb.pdf → DanceTheNight_Bb_Chart.pdf
+2025-07-10 16:47:41,476 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:41,477 INFO LLM Celebrate - Bb.pdf → Celebrate_Bb_Chart.pdf
+2025-07-10 16:47:41,940 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:41,942 INFO LLM Thinking Out Loud-Tenor_Saxophone.pdf → ThinkingOutLoud_Eb_Chart.pdf
+2025-07-10 16:47:42,392 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:42,405 INFO LLM AsItWas-Trumpet_in_Bb.pdf → AsItWas_Trumpet_Chart.pdf
+2025-07-10 16:47:42,836 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:42,837 INFO LLM JT Medley - Trombone_Combined.pdf → JTMedley_BassClef_Chart.pdf
+2025-07-10 16:47:43,681 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:43,683 INFO LLM JT Medley - Bb_Combined.pdf → JTMedley_Bb_Chart.pdf
+2025-07-10 16:47:44,296 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:44,297 INFO LLM JT Medley - Eb_Combined.pdf → JTMedley_Eb_Chart.pdf
+2025-07-10 16:47:44,811 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:44,813 INFO LLM JT Medley - Concert_Combined.pdf → JTMedley_Concert_Chart.pdf
+2025-07-10 16:47:46,258 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:46,269 INFO LLM JT Medley (Short) - Lyrics.pdf → JTMedley_Lyrics_Chart.pdf
+2025-07-10 16:47:46,753 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:46,755 INFO LLM JT Medley - Lyrics.pdf → JTMedley_Lyrics_Chart.pdf
+2025-07-10 16:47:47,185 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:47,187 INFO LLM JT Medley (Short).pdf → JTMedley_Eb_Chart.pdf
+2025-07-10 16:47:47,676 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:47,678 INFO LLM JT Medley - Chords.pdf → JTMedley_Chords_Chart.pdf
+2025-07-10 16:47:48,191 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:48,193 INFO LLM JT Medley - ACAPELLA.wav → JTMedley_Original.wav
+2025-07-10 16:47:48,698 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:48,700 INFO LLM JT Medley - ALL PARTS.mp3 → SKIP
+2025-07-10 16:47:49,209 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:49,210 INFO LLM JT Medley - ALTO.mp3 → JTMedley_Bb.mp3
+2025-07-10 16:47:49,679 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:49,683 INFO LLM JT Medley - Tenor.pdf → JtMedley_Bb_Chart.pdf
+2025-07-10 16:47:50,114 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:50,117 INFO LLM JT Medley - Bari.pdf → JtMedley_Eb_Chart.pdf
+2025-07-10 16:47:50,487 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:50,489 INFO LLM JT Medley - Trombone.pdf → JTMedley_BassClef_Chart.pdf
+2025-07-10 16:47:50,832 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:50,836 INFO LLM JT Medley Trumpet.pdf → JTMedley_Trumpet_Chart.pdf
+2025-07-10 16:47:51,362 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:51,365 INFO LLM Piano_DYWBAT.pdf → DoYouWantToBuildATheme_Eb_Chart.pdf
+2025-07-10 16:47:51,873 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:51,875 INFO LLM Tenor_DYWBAT.pdf → DYWBAT_Eb_Chart.pdf
+2025-07-10 16:47:52,404 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:52,406 INFO LLM Tbn_DYWBAT.pdf → DYWBAT_BassClef_Chart.pdf
+2025-07-10 16:47:53,102 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:53,103 INFO LLM Tpt_DYWBAT.pdf → DYWBAT_Eb_Chart.pdf
+2025-07-10 16:47:53,598 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:53,610 INFO LLM Guitar_DYWBAT.pdf → DYWBAT_Chords_Chart.pdf
+2025-07-10 16:47:54,104 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:54,104 INFO LLM Drums_DYWBAT.pdf → Drums_DYWBAT_Eb_Chart.pdf
+2025-07-10 16:47:55,073 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:55,074 INFO LLM Don_t You Worry Bout A Thing.pdf → DontYouWorryBoutAThing_Eb_Chart.pdf
+2025-07-10 16:47:55,763 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:55,765 INFO LLM Don_t You Worry Bout A Thing - Lyrics.pdf → DontYouWorryBoutAThing_Lyrics_Chart.pdf
+2025-07-10 16:47:56,134 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:56,136 INFO LLM Don_t You Worry - MEN.wav → DontYouWorry_Original.wav
+2025-07-10 16:47:56,897 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:56,898 INFO LLM Don_t You Worry - WOMEN.wav → DontYouWorry_Original.wav
+2025-07-10 16:47:57,355 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:57,356 INFO LLM Don_t You Worry - ALL PARTS.wav → SKIP
+2025-07-10 16:47:57,823 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:57,825 INFO LLM Hot In Herre.pdf → HotInHerre_Eb_Chart.pdf
+2025-07-10 16:47:58,315 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:58,317 INFO LLM Hot In Herre - Lyrics.pdf → HotInHerre_Lyrics_Chart.pdf
+2025-07-10 16:47:58,837 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:58,839 INFO LLM Hot In Herre_Bari.pdf → HotInHerre_Eb_Chart.pdf
+2025-07-10 16:47:59,348 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:59,349 INFO LLM Hot In Herre_Trumpet.pdf → HotInHerre_Eb_Chart.pdf
+2025-07-10 16:47:59,859 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:47:59,861 INFO LLM Hot In Herre_Tenor.pdf → HotInHerre_Bb_Chart.pdf
+2025-07-10 16:48:00,373 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-10 16:48:00,375 INFO LLM Hot In Herre_Trombone.pdf → HotInHerre_BassClef_Chart.pdf
