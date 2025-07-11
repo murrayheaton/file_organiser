@@ -9,6 +9,26 @@ from __future__ import annotations
 from dotenv import load_dotenv
 load_dotenv(dotenv_path="/Users/murrayheaton/Documents/GitHub/file_organiser/.env", override=True)  # force .env values to win
 import os, re, shutil, pathlib, json, logging
+from datetime import date
+
+TRAIN_DIR = pathlib.Path("training")
+TRAIN_DIR.mkdir(exist_ok=True)
+
+def log_training_row(src_name: str, answer: str) -> None:
+    """
+    Append ONE supervised row to today's JSONL.
+    `answer` can be a real filename or the string 'SKIP'.
+    """
+    row = {
+        "messages": [
+            {"role": "user",      "content": f"filename: {src_name}"},
+            {"role": "assistant", "content": answer},
+        ]
+    }
+    fname = TRAIN_DIR / f"{date.today()}.jsonl"
+    with fname.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
 from typing import Final
 from openai import OpenAI
 client = OpenAI(
@@ -16,15 +36,32 @@ client = OpenAI(
     project=os.getenv("OPENAI_PROJECT"),
 )
 print("🔑", client.api_key[:10]+"…", "Project:", client.project)
-MODEL: Final = "gpt-3.5-turbo-0125"
+
+# ── Model ID: use fine‑tuned model if present ─────────────────────
+MODEL_FILE = pathlib.Path("config/model_id.txt")
+if MODEL_FILE.exists():
+    MODEL = MODEL_FILE.read_text().strip()
+    print("🆕  Using fine‑tuned model:", MODEL)
+else:
+    MODEL = "gpt-3.5-turbo-0125"
+    print("ℹ️  Falling back to base model:", MODEL)
 
 # 1 ─── Config – edit these paths if you like ────────────────────────────────
 import argparse, os, pathlib
 
 def parse_args():
-    p = argparse.ArgumentParser(description="LLM‑powered file organiser")
-    p.add_argument("--src", help="Source directory with incoming files")
-    p.add_argument("--dst", help="Destination directory for renamed files")
+    p = argparse.ArgumentParser(description="Smart file organiser")
+    p.add_argument("--src",  help="Source directory")
+    p.add_argument("--dst",  help="Destination directory")
+    p.add_argument("--max",  type=int, default=None,
+                   help="Process at most N files")
+    g = p.add_mutually_exclusive_group()
+    g.add_argument("--auto",   action="store_true",
+                   help="Fully automatic – never ask (default).")
+    g.add_argument("--fix",    action="store_true",
+                   help="Ask only when model output is invalid.")
+    g.add_argument("--review", action="store_true",
+                   help="Ask y/n/s (accept/error/skip) on EVERY file.")
     return p.parse_args()
 
 args = parse_args()
@@ -32,7 +69,13 @@ args = parse_args()
 #  Order of precedence:  CLI flag  >  environment variable  >  default
 SOURCE_DIR = pathlib.Path("/Users/murrayheaton/Desktop/DriveDumpTest")
 DEST_DIR   = pathlib.Path("/Users/murrayheaton/Desktop/DumpDest")
+ERROR_DIR: pathlib.Path = DEST_DIR / "__PARSING_ERROR"   # ← NEW
 LOG_FILE    : Final = "organise.log"
+SKIP_DIR = DEST_DIR / "__SKIPPED"
+SKIP_DIR.mkdir(parents=True, exist_ok=True)
+ERROR_DIR = DEST_DIR / "__PARSING_ERROR"
+for d in (DEST_DIR, SKIP_DIR, ERROR_DIR):
+    d.mkdir(parents=True, exist_ok=True)
 
 # --- Debug: print working and source directories
 import os
@@ -57,10 +100,12 @@ INSTRUMENT_MAP: Final[dict[str, str]] = {
     r"\b(bari|baritone(?:\s*sax)?)\b":              "Eb",
     r"\b(tpt|trumpet|tenor|clarinet|bb\s*sax)\b":   "Bb",
     r"\b(trombone|bass\s*tbn|bassclef|tuba)\b":     "BassClef",
-    r"\b(guitar|gtr|rhythm|piano|keys?)\b":         "Chords",
+    r"\b(guitar|gtr|concert|piano|keys?)\b":         "Concert",
+    r"\b(lyrics?)\b":                                "Lyrics",
 }
 
 # 4 ─── Helper: add “ (1) ”, “ (2) ” … if needed ─────────────────────────────
+
 def unique_path(dst: pathlib.Path) -> pathlib.Path:
     if not dst.exists():
         return dst
@@ -72,7 +117,71 @@ def unique_path(dst: pathlib.Path) -> pathlib.Path:
             return candidate
         n += 1
 
-# 5 ─── Load .env and create OpenAI client ───────────────────────────────────
+def ask_choice(prompt: str) -> str:
+    """
+    Return one of 'y', 'n', 's'.
+    Empty input defaults to 'n' in review‑all mode, to '' in fix mode.
+    """
+    try:
+        return input(prompt).strip().lower()[:1]
+    except EOFError:
+        return ""
+
+
+def move_to_skip(src: pathlib.Path) -> None:
+    """Move a file into DEST_DIR/__SKIPPED so we never scan it again."""
+    dst = unique_path(SKIP_DIR / src.name)
+    shutil.move(src, dst)
+    print(f"⏭️  {src.name} moved to {dst.relative_to(DEST_DIR.parent)}")
+    logging.info("SKIPPED %s → %s", src.name, dst)
+
+
+# ── 5  NEW: handle_move lives at COLUMN 0 (module scope) ─────────
+def handle_move(src: pathlib.Path, proposal: str, mode: str) -> None:
+    """
+    mode = 'auto' | 'fix' | 'review'
+    proposal = string returned by LLM (may be 'SKIP' or invalid)
+    """
+    valid = valid_filename(proposal) and proposal != "SKIP"
+
+    # --- review mode -------------------------------------------------
+    if mode == "review":
+        print(f"📝 {src.name}\n → {proposal}")
+        choice = ask_choice("   [y] accept  [n] error  [s] skip  : ")
+        if choice == "y":
+            dst = unique_path(DEST_DIR / proposal) if valid else unique_path(ERROR_DIR / src.name)
+            shutil.move(src, dst)
+            log_training_row(src.name, proposal if valid else "SKIP")
+        elif choice == "s":
+            move_to_skip(src); log_training_row(src.name, "SKIP")
+        else:
+            dst = unique_path(ERROR_DIR / src.name)
+            shutil.move(src, dst)
+            log_training_row(src.name, "SKIP")
+        return
+
+    # --- fix mode ----------------------------------------------------
+    if mode == "fix" and not valid:
+        print(f"⚠️  Needs manual fix: {src.name}")
+        corrected = input("   ↳ New filename or blank to skip: ").strip()
+        if corrected:
+            dst = unique_path(DEST_DIR / corrected)
+            shutil.move(src, dst)
+            log_training_row(src.name, corrected)
+        else:
+            move_to_skip(src); log_training_row(src.name, "SKIP")
+        return
+
+    # --- auto / valid path ------------------------------------------
+    if valid:
+        dst = unique_path(DEST_DIR / proposal)
+        shutil.move(src, dst)
+        log_training_row(src.name, proposal)
+    else:
+        dst = unique_path(ERROR_DIR / src.name)
+        shutil.move(src, dst)
+        log_training_row(src.name, "SKIP")
+
 
 # 6 ─── System prompt from the previous answer ───────────────────────────────
 SYSTEM_PROMPT = """
@@ -98,45 +207,40 @@ Audio  (.wav .mp3)           → <SongTitle>_<FileType>.<ext>
   » “Best Of My Love_Lil Boo Thang” → **BestOfMyLoveLilBooThang**
 
 █  INSTRUMENT (charts only)
-You must output **exactly one** token from the set  
-Eb | Bb | Concert | BassClef | Chords | Lyrics.  
-If multiple clues appear, apply this precedence (top wins):  
-Eb / Bb / BassClef / Concert / Lyrics / Chords.  
-Mappings (case‑insensitive substrings) →
-   Alto | Eb Sax | Eb‑Sax                   → Eb
-   Bari | Baritone | Bari‑Sax | BaritoneSax → Eb
-   Tenor | Trumpet | Tpt | Bb‑Sax           → Bb
-   Trombone | Bass Tbn | Tuba               → BassClef
-   Guitar | Gtr | Rhythm | Piano | Keys     → Chords
-   Any .onsongarchive file                  → Lyrics
-If no clue & no hint, **default to Chords**.
-Never append “Chords” when you have already chosen another token.
-If the filename already contains a token word (e.g. “…_Bb.pdf”) you
-**must not add any SECOND token** even if other clue words appear.
+You must output **exactly one** token from:
+  Eb | Bb | Concert | BassClef | Chords | Lyrics
+Rules
+• If the filename ends with “.onsongarchive” and includes the substr "Lyrics" ⇒ choose **Lyrics**.
+• If the filename ends with “.onsongarchive” and does not include the substr "Lyrics" ⇒ choose **Chords**.
+• Otherwise use these mappings (case‑insensitive substr):
+    Alto  | Bari | Baritone | Eb               → Eb
+    Tenor | Trumpet | Tpt | Bb                 → Bb
+    Trombone | Bass | Tbn                      → BassClef
+    Guitar | Gtr | Concert | Piano | Keys      → Concert
+    Lyrics                                     → Lyrics
+• Never emit two instrument tokens.  
+  “*_Eb_Chords_Chart.pdf*” is INVALID.
 
 █  FILETYPE (audio only)
-Canonical tokens:  Ableton  SPL  Cues  Original
-Detection order (case‑insensitive):
-    1. filename contains “cue” | “cues” | “ableton”  → Cues   ← unified
-    2. contains “spl” | “sp”                         → SPL
-    3. otherwise                                     → Original
-Audio files NEVER carry an <Instrument> field.
+Canonical tokens:  Cues  SPL  Original
+Detection order:
+  1. filename contains “cue” | “cues” | “ableton”  → Cues
+  2. contains “spl” | “sp”                         → SPL
+  3. otherwise                                     → Original
 
 █  SKIP RULES
 Charts:  never skipped for part‑name words (Tenor, etc.)
 Audio :  skip if filename (any case) contains  
          “Instrumental” | “Soprano” | “Alto” | “Tenor” |  
-         “Acapella” | “A cappella” | “Everyone” | “All Parts”
-All files: skip if the word TENOR or SOPRANO appears in FULL CAPS  
-           (legacy rule for another band).
+         “Acapella” | “Acappella” | “Everyone” | “All Parts”
 
 █  SELF‑CHECK (before replying)
 Return SKIP or match one of:
   ^[A-Za-z0-9]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_Chart\\.(pdf|onsongarchive)$
-  ^[A-Za-z0-9]+_(Ableton|SPL|Cues|Original)\\.(wav|mp3)$
+  ^[A-Za-z0-9]+_(SPL|Cues|Original)\\.(wav|mp3)$
 
 █  EXAMPLES (new cases)
-Input                                       → Output
+Input                                               → Output
 {"filename":"Gimme Gimme SP (with Cues).mp3"}       → GimmeGimme_Cues.mp3
 {"filename":"Stand By Me - SPL (Instrumental).mp3"} → SKIP
 {"filename":"Best Of MyLove_Lil Boo Thang - SP.mp3"}→ BestOfMyLoveLilBooThang_SPL.mp3
@@ -154,7 +258,7 @@ Return that canonicalised title in future outputs.
 
 # 7 ─── Function: ask the model for one filename ─────────────────────────────
 CHART_RE = re.compile(r"^[A-Za-z0-9]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_Chart\.(pdf|onsongarchive)$")
-AUDIO_RE = re.compile(r"^[A-Za-z0-9]+_(Ableton|SPL|Cues|Original)\.(wav|mp3)$")
+AUDIO_RE = re.compile(r"^[A-Za-z0-9]+_(SPL|Cues|Original)\.(wav|mp3)$")
 DOUBLE_TOKENS = re.compile(r"_[A-Z][A-Za-z]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_")
 
 def propose_new_name(src_name: str, instrument_hint: str | None) -> str:
@@ -222,11 +326,18 @@ def organise_folder() -> None:
                 return best
         TITLE_MAP[title] = title
         return title
-
+    # ── Scan the source directory ─────────────────────────────────
+    processed = 0  
     for src in SOURCE_DIR.glob("**/*"):
+        # skip anything already moved to the skip folder
+        if SKIP_DIR in src.parents:
+            continue
+        if args.max and processed >= args.max:
+            break
         print(f"🔍 Scanning path: {src}")
         if not src.is_file():
             continue
+        processed += 1
 
         # 9.1 – skip early if extension not of interest
         ext = src.suffix.lower()
@@ -239,46 +350,27 @@ def organise_folder() -> None:
             print(f"🚫 {src.name} (vocal reference – skipped)")
             continue
 
-        # 9.3 – heuristic instrument hint
+        # 9.3 – instrument hint
         instrument_hint: str | None = None
-        if ext in {".pdf", ".onsongarchive"}:
+        if ext == ".onsongarchive":
+            instrument_hint = "Lyrics" if "Lyrics" in src.name else "Chords"
+        elif ext == ".pdf":
             for pat, token in INSTRUMENT_MAP.items():
-                # audio skip patterns (should not apply for charts, but left for logic parity)
-                if ext in {".mp3", ".wav"} and re.search(
-                        r"(Instrumental|Soprano|Alto|Tenor|Acapella|A[\\s]?cappella|Everyone|All[ _]?Parts)",
-                        src.name, flags=re.I):
-                    print(f"🚫 {src.name} (audio reference – skipped)")
-                    continue
-                # legacy full‑caps rule
-                if re.search(r"\b(TENOR|SOPRANO)\b", src.name):
-                    print(f"🚫 {src.name} (legacy vocal ref – skipped)")
-                    continue
-                instrument_hint = token
-                break
+                if re.search(pat, src.name, flags=re.I):
+                    instrument_hint = token
+                    break
 
         # 9.4 – ask the LLM
-        new_name = propose_new_name(src.name, instrument_hint)
+        proposal = propose_new_name(src.name, instrument_hint)
+        proposal = shortest_title(proposal)     # canonicalise
 
-        def canonicalise(fname: str) -> str:
-            title, *tail = fname.split("_", 1)   # split only at first underscore
-            canon = shortest_title(title)
-            return "_".join([canon, *tail])
-        new_name = canonicalise(new_name)
+        # 9.5 – act according to the chosen mode
+        mode = "review" if args.review else "fix" if args.fix else "auto"
+        handle_move(src, proposal, mode)
 
-        # 9.5 – safety net: validate
-        if not valid_filename(new_name):
-            print(f"⚠️  Model returned invalid name for {src.name}: {new_name}")
-            continue
-        if new_name == "SKIP":
-            print(f"🚫 {src.name} (model said skip)")
-            continue
+        continue        # next file  (remove any old 9.6 block below)
 
-        # 9.6 – move the file
-        dst = unique_path(DEST_DIR / new_name)
-        shutil.move(src, dst)
-        print(f"✅ {src.name}  →  {dst.name}")
-
-        # (title canonicalisation setup moved to top of function)
+    # (Remove the inner handle_move function entirely and use the global handle_move defined at module scope)
 
 # 10 ─── Entry‑point ─────────────────────────────────────────────────────────
 if __name__ == "__main__":
