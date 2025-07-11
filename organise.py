@@ -53,12 +53,11 @@ print(f"✅ Logs → {LOG_FILE}")
 
 # 3 ─── Instrument regex map (deterministic pre‑check) ───────────────────────
 INSTRUMENT_MAP: Final[dict[str, str]] = {
-    # pattern                  token
-    r"\b(alto|eb\s*sax|ebsax)\b":          "Eb",
-    r"\b(tpt|trumpet|tenor|clarinet)\b":   "Bb",
-    r"\b(flute|piano|keys?|violin)\b":     "Concert",
-    r"\b(trombone|tuba|bass)\b":           "BassClef",
-    r"\b(chords?|gtr|guitar|rhythm)\b":    "Chords",
+    r"\b(alto|eb\s*sax|ebsax)\b":                   "Eb",
+    r"\b(bari|baritone(?:\s*sax)?)\b":              "Eb",
+    r"\b(tpt|trumpet|tenor|clarinet|bb\s*sax)\b":   "Bb",
+    r"\b(trombone|bass\s*tbn|bassclef|tuba)\b":     "BassClef",
+    r"\b(guitar|gtr|rhythm|piano|keys?)\b":         "Chords",
 }
 
 # 4 ─── Helper: add “ (1) ”, “ (2) ” … if needed ─────────────────────────────
@@ -99,15 +98,21 @@ Audio  (.wav .mp3)           → <SongTitle>_<FileType>.<ext>
   » “Best Of My Love_Lil Boo Thang” → **BestOfMyLoveLilBooThang**
 
 █  INSTRUMENT (charts only)
-Canonical tokens:  Eb  Bb  Concert  BassClef  Chords  Lyrics
-Mapping  (case‑insensitive substrings):
-  Alto | Eb Sax | Eb‑Sax                   → Eb
-  Bari | Baritone | Bari‑Sax | BaritoneSax → Eb      ← NEW
-  Tenor | Trumpet | Tpt | Bb‑Sax           → Bb
-  Trombone | Bass Tbn | Tuba               → BassClef
-  Guitar | Gtr | Rhythm | Piano | Keys     → Chords
-  Any .onsongarchive file                  → Lyrics
-Default if no clue & no hint               → **Chords**  ← CHANGED
+You must output **exactly one** token from the set  
+Eb | Bb | Concert | BassClef | Chords | Lyrics.  
+If multiple clues appear, apply this precedence (top wins):  
+Eb / Bb / BassClef / Concert / Lyrics / Chords.  
+Mappings (case‑insensitive substrings) →
+   Alto | Eb Sax | Eb‑Sax                   → Eb
+   Bari | Baritone | Bari‑Sax | BaritoneSax → Eb
+   Tenor | Trumpet | Tpt | Bb‑Sax           → Bb
+   Trombone | Bass Tbn | Tuba               → BassClef
+   Guitar | Gtr | Rhythm | Piano | Keys     → Chords
+   Any .onsongarchive file                  → Lyrics
+If no clue & no hint, **default to Chords**.
+Never append “Chords” when you have already chosen another token.
+If the filename already contains a token word (e.g. “…_Bb.pdf”) you
+**must not add any SECOND token** even if other clue words appear.
 
 █  FILETYPE (audio only)
 Canonical tokens:  Ableton  SPL  Cues  Original
@@ -148,6 +153,10 @@ Return that canonicalised title in future outputs.
 """
 
 # 7 ─── Function: ask the model for one filename ─────────────────────────────
+CHART_RE = re.compile(r"^[A-Za-z0-9]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_Chart\.(pdf|onsongarchive)$")
+AUDIO_RE = re.compile(r"^[A-Za-z0-9]+_(Ableton|SPL|Cues|Original)\.(wav|mp3)$")
+DOUBLE_TOKENS = re.compile(r"_[A-Z][A-Za-z]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_")
+
 def propose_new_name(src_name: str, instrument_hint: str | None) -> str:
     # Build the user prompt
     user_msg = {
@@ -167,15 +176,29 @@ def propose_new_name(src_name: str, instrument_hint: str | None) -> str:
         temperature=0,
         max_tokens=30,
     )
-    raw_content = resp.choices[0].message.content
-    answer = raw_content.strip() if raw_content is not None else ""
+    raw_content = resp.choices[0].message.content or ""
+    answer = raw_content.strip()
+
+    # retry once if we got two instrument tokens
+    if DOUBLE_TOKENS.search(answer):
+        logging.warning("Double‑instrument detected, retrying once: %s", answer)
+        # ask again with a system nudge
+        chat_messages.append({"role": "assistant", "content": answer})
+        chat_messages.append(
+            {"role": "user", "content": "You returned two instrument tokens; reply again with exactly one."}
+        )
+        answer = client.chat.completions.create(
+            model=MODEL,
+            messages=chat_messages,  # type: ignore[arg-type]
+            temperature=0,
+            max_tokens=30,
+        ).choices[0].message.content or ""
+        answer = answer.strip()
+
     logging.info("LLM %s → %s", src_name, answer)
     return answer
 
 # 8 ─── Validation: check the model obeyed the spec ──────────────────────────
-CHART_RE = re.compile(r"^[A-Za-z0-9]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_Chart\.(pdf|onsongarchive)$")
-AUDIO_RE = re.compile(r"^[A-Za-z0-9]+_(Ableton|SPL|Cues|Original)\.(wav|mp3)$")
-
 def valid_filename(name: str) -> bool:
     return bool(CHART_RE.fullmatch(name) or AUDIO_RE.fullmatch(name) or name=="SKIP")
 
@@ -235,8 +258,6 @@ def organise_folder() -> None:
 
         # 9.4 – ask the LLM
         new_name = propose_new_name(src.name, instrument_hint)
-
-        canonical_map = {}
 
         def canonicalise(fname: str) -> str:
             title, *tail = fname.split("_", 1)   # split only at first underscore
