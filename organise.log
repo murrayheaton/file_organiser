@@ -4924,3 +4924,13 @@
 2025-07-11 16:06:10,574 WARNING Double‑instrument detected, retrying once: Body_Concert_Chords_Chart.pdf
 2025-07-11 16:06:11,332 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-07-11 16:06:11,334 INFO LLM Body_Concert.pdf → Body_Concert_Chords_Chart.pdf
+2025-07-12 05:19:40,222 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 05:19:40,231 WARNING Double‑instrument detected, retrying once: Body_Concert_Chords_Chart.pdf
+2025-07-12 05:19:41,243 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 05:19:41,246 INFO LLM Body_Concert.pdf → Body_Concert_Chords_Chart.pdf
+2025-07-12 05:19:52,200 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 05:19:52,202 INFO LLM MoulinRouge-Baritone_Saxophone.pdf → MoulinRouge_Bb_Chart.pdf
+2025-07-12 05:19:57,117 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 05:19:57,119 WARNING Double‑instrument detected, retrying once: Punk_Eb_Chords_Chart.pdf
+2025-07-12 05:19:58,035 INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-12 05:19:58,037 INFO LLM Punk_Eb.pdf → Punk_Eb_Chords_Chart.pdf
