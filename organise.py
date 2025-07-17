@@ -95,14 +95,6 @@ logging.basicConfig(
 print(f"✅ Logs → {LOG_FILE}")
 
 # 3 ─── Instrument regex map (deterministic pre‑check) ───────────────────────
-INSTRUMENT_MAP: Final[dict[str, str]] = {
-    r"\b(alto|eb\s*sax|ebsax)\b":                   "Eb",
-    r"\b(bari|baritone(?:\s*sax)?)\b":              "Eb",
-    r"\b(tpt|trumpet|tenor|clarinet|bb\s*sax)\b":   "Bb",
-    r"\b(trombone|bass\s*tbn|bassclef|tuba)\b":     "BassClef",
-    r"\b(guitar|gtr|concert|piano|keys?)\b":         "Concert",
-    r"\b(lyrics?)\b":                                "Lyrics",
-}
 
 # 4 ─── Helper: add “ (1) ”, “ (2) ” … if needed ─────────────────────────────
 
@@ -149,11 +141,23 @@ def handle_move(src: pathlib.Path, proposal: str, mode: str) -> None:
         print(f"📝 {src.name}\n → {proposal}")
         choice = ask_choice("   [y] accept  [n] error  [s] skip  : ")
         if choice == "y":
+            proposal = shortest_title(proposal)
             dst = unique_path(DEST_DIR / proposal) if valid else unique_path(ERROR_DIR / src.name)
             shutil.move(src, dst)
             log_training_row(src.name, proposal if valid else "SKIP")
         elif choice == "s":
             move_to_skip(src); log_training_row(src.name, "SKIP")
+        elif choice == "n":
+            corrected = input("   ↳ Enter correct filename or blank to skip: ").strip()
+            if corrected:
+                corrected = shortest_title(corrected)
+                dst = unique_path(ERROR_DIR / corrected)
+                shutil.move(src, dst)
+                log_training_row(src.name, corrected)   # positive example
+            else:
+                dst = unique_path(ERROR_DIR / src.name)
+                shutil.move(src, dst)
+                log_training_row(src.name, "SKIP")    
         else:
             dst = unique_path(ERROR_DIR / src.name)
             shutil.move(src, dst)
@@ -174,6 +178,7 @@ def handle_move(src: pathlib.Path, proposal: str, mode: str) -> None:
 
     # --- auto / valid path ------------------------------------------
     if valid:
+        proposal = shortest_title(proposal)
         dst = unique_path(DEST_DIR / proposal)
         shutil.move(src, dst)
         log_training_row(src.name, proposal)
@@ -187,9 +192,12 @@ def handle_move(src: pathlib.Path, proposal: str, mode: str) -> None:
 SYSTEM_PROMPT = """
 You are a deterministic file‑renaming micro‑agent.
 
-█  INPUT
-Single user message, JSON encoded:
-  { "filename": <str>, "instrument_hint": <str|null> }
+ █  INPUT
+   { "filename": <str>, "instrument_hint": <str|null> }
+
+█  HINT OVERRIDE
+If "instrument_hint" is **not null**, you **must** output that exact
+token for the <Instrument> slot and skip all instrument-guess rules.
 
 █  OUTPUT (one line, no quotes)
 Either
@@ -259,7 +267,19 @@ Return that canonicalised title in future outputs.
 # 7 ─── Function: ask the model for one filename ─────────────────────────────
 CHART_RE = re.compile(r"^[A-Za-z0-9]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_Chart\.(pdf|onsongarchive)$")
 AUDIO_RE = re.compile(r"^[A-Za-z0-9]+_(SPL|Cues|Original)\.(wav|mp3)$")
-DOUBLE_TOKENS = re.compile(r"_[A-Z][A-Za-z]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)_")
+DOUBLE_TOKENS = re.compile(
+    r"_[A-Z][A-Za-z]+_(Eb|Bb|Concert|BassClef|Chords|Lyrics)(?:_Chart)?\."
+)
+def clean_double_tokens(name: str) -> str:
+    m = DOUBLE_TOKENS.search(name)
+    if not m:
+        return name
+    # keep SongTitle and FIRST instrument token
+    parts = name.split("_")
+    clean = f"{parts[0]}_{parts[1]}_Chart{pathlib.Path(name).suffix}"
+    return clean if valid_filename(clean) else "SKIP"
+def valid_filename(name: str) -> bool:
+    return bool(CHART_RE.fullmatch(name) or AUDIO_RE.fullmatch(name) or name=="SKIP")
 
 def propose_new_name(src_name: str, instrument_hint: str | None) -> str:
     # Build the user prompt
@@ -291,6 +311,7 @@ def propose_new_name(src_name: str, instrument_hint: str | None) -> str:
         chat_messages.append(
             {"role": "user", "content": "You returned two instrument tokens; reply again with exactly one."}
         )
+
         answer = client.chat.completions.create(
             model=MODEL,
             messages=chat_messages,  # type: ignore[arg-type]
@@ -299,33 +320,36 @@ def propose_new_name(src_name: str, instrument_hint: str | None) -> str:
         ).choices[0].message.content or ""
         answer = answer.strip()
 
+        answer = clean_double_tokens(answer)
+
     logging.info("LLM %s → %s", src_name, answer)
     return answer
 
 # 8 ─── Validation: check the model obeyed the spec ──────────────────────────
-def valid_filename(name: str) -> bool:
-    return bool(CHART_RE.fullmatch(name) or AUDIO_RE.fullmatch(name) or name=="SKIP")
+
+
+from difflib import SequenceMatcher
+TITLE_MAP: dict[str, str] = {}   # raw → canonical
+
+def shortest_title(title: str) -> str:
+    """
+    Return a canonical form: the shortest earlier title that
+    has ≥ 0.8 similarity to the new one; otherwise keep as-is.
+    """
+    for seen, canon in TITLE_MAP.items():
+        ratio = SequenceMatcher(None, title, seen).ratio()
+        if ratio >= 0.8:
+            # choose the shorter of the two
+            best = canon if len(canon) < len(title) else title
+            TITLE_MAP[seen] = TITLE_MAP[title] = best
+            return best
+    TITLE_MAP[title] = title
+    return title
 
 # 9 ─── Core loop ─────────────────────────────────────────────────────────────
 def organise_folder() -> None:
     # ── Title canonicalisation setup ───────────────────────────────
-    from difflib import SequenceMatcher
-    TITLE_MAP: dict[str, str] = {}   # raw → canonical
-
-    def shortest_title(title: str) -> str:
-        """
-        Return a canonical form: the shortest earlier title that
-        has ≥ 0.8 similarity to the new one; otherwise keep as-is.
-        """
-        for seen, canon in TITLE_MAP.items():
-            ratio = SequenceMatcher(None, title, seen).ratio()
-            if ratio >= 0.8:
-                # choose the shorter of the two
-                best = canon if len(canon) < len(title) else title
-                TITLE_MAP[seen] = TITLE_MAP[title] = best
-                return best
-        TITLE_MAP[title] = title
-        return title
+    # TITLE_MAP and shortest_title are now defined at module scope
     # ── Scan the source directory ─────────────────────────────────
     processed = 0  
     for src in SOURCE_DIR.glob("**/*"):
@@ -362,13 +386,14 @@ def organise_folder() -> None:
 
         # 9.4 – ask the LLM
         proposal = propose_new_name(src.name, instrument_hint)
-        proposal = shortest_title(proposal)     # canonicalise
+       
 
         # 9.5 – act according to the chosen mode
         mode = "review" if args.review else "fix" if args.fix else "auto"
         handle_move(src, proposal, mode)
 
         continue        # next file  (remove any old 9.6 block below)
+    
 
     # (Remove the inner handle_move function entirely and use the global handle_move defined at module scope)
 
